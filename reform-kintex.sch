@@ -432,7 +432,7 @@ Wire Wire Line
 Wire Wire Line
 	5750 2450 6650 2450
 $Comp
-L reform2-som:reform2-som-connector U1
+L reform-kintex-rescue:reform2-som-connector-reform2-som U1
 U 1 1 60678A3C
 P 4850 7250
 F 0 "U1" H 4900 12317 50  0000 C CNN
