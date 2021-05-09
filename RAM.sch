@@ -129,23 +129,23 @@ RAM_D0
 $Comp
 L FPGA_Xilinx_Kintex7:XC7K160T-FFG676 U2
 U 1 1 5FF77BE9
-P 3200 4200
-F 0 "U2" H 3200 1225 50  0000 C CNN
-F 1 "XC7K160T-FFG676" H 3200 1134 50  0000 C CNN
-F 2 "Package_BGA:Xilinx_FFG676" H 3200 4200 50  0001 C CNN
-F 3 "" H 3200 4200 50  0000 C CNN
-	1    3200 4200
+P 3500 4200
+F 0 "U2" H 3500 1225 50  0000 C CNN
+F 1 "XC7K160T-FFG676" H 3500 1134 50  0000 C CNN
+F 2 "Package_BGA:Xilinx_FFG676" H 3500 4200 50  0001 C CNN
+F 3 "" H 3500 4200 50  0000 C CNN
+	1    3500 4200
 	1    0    0    -1  
 $EndComp
 $Comp
 L FPGA_Xilinx_Kintex7:XC7K160T-FFG676 U2
 U 2 1 5FF92681
-P 8150 4200
-F 0 "U2" H 8150 1225 50  0000 C CNN
-F 1 "XC7K160T-FFG676" H 8150 1134 50  0000 C CNN
-F 2 "Package_BGA:Xilinx_FFG676" H 8150 4200 50  0001 C CNN
-F 3 "" H 8150 4200 50  0000 C CNN
-	2    8150 4200
+P 9300 4200
+F 0 "U2" H 9300 1225 50  0000 C CNN
+F 1 "XC7K160T-FFG676" H 9300 1134 50  0000 C CNN
+F 2 "Package_BGA:Xilinx_FFG676" H 9300 4200 50  0001 C CNN
+F 3 "" H 9300 4200 50  0000 C CNN
+	2    9300 4200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2065,31 +2065,31 @@ Wire Wire Line
 	17450 16650 19300 16650
 Text Notes 14800 14850 0    50   ~ 0
 TODO: bank 14 config pins
-Text GLabel 10150 2700 2    50   Input ~ 0
+Text GLabel 11300 2700 2    50   Output ~ 0
 SD2_CLK
-Text GLabel 10150 2600 2    50   Input ~ 0
+Text GLabel 11300 2600 2    50   Output ~ 0
 SD2_CMD
-Text GLabel 10150 2500 2    50   BiDi ~ 0
+Text GLabel 11300 2500 2    50   BiDi ~ 0
 SD2_DATA3
-Text GLabel 10150 2400 2    50   BiDi ~ 0
+Text GLabel 11300 2400 2    50   BiDi ~ 0
 SD2_DATA2
-Text GLabel 10150 2300 2    50   BiDi ~ 0
+Text GLabel 11300 2300 2    50   BiDi ~ 0
 SD2_DATA1
-Text GLabel 10150 2200 2    50   BiDi ~ 0
+Text GLabel 11300 2200 2    50   BiDi ~ 0
 SD2_DATA0
-Text GLabel 10150 6900 2    50   Output ~ 0
+Text GLabel 11300 6900 2    50   Output ~ 0
 DAC_MCLK
-Text GLabel 10150 6600 2    50   Output ~ 0
+Text GLabel 11300 6600 2    50   Output ~ 0
 DAC_RXFS
-Text GLabel 10150 6700 2    50   Output ~ 0
+Text GLabel 11300 6700 2    50   Output ~ 0
 DAC_BCLK
-Text GLabel 10150 6500 2    50   Input ~ 0
+Text GLabel 11300 6500 2    50   Input ~ 0
 DAC_DIN
-Text GLabel 10150 7000 2    50   Output ~ 0
+Text GLabel 11300 7000 2    50   Output ~ 0
 DAC_DOUT
-Text GLabel 10150 6800 2    50   Output ~ 0
+Text GLabel 11300 6800 2    50   Output ~ 0
 DAC_TXFS
-Text GLabel 10150 6400 2    50   Output ~ 0
+Text GLabel 11300 6400 2    50   Output ~ 0
 BACKLIGHT_PWM
 Text GLabel 25450 13250 0    50   BiDi ~ 0
 HDMI_CEC
@@ -2123,9 +2123,9 @@ Text GLabel 8000 18500 0    50   BiDi ~ 0
 USB1_DP
 Text GLabel 8000 18600 0    50   BiDi ~ 0
 USB1_DN
-Text GLabel 8000 18400 0    50   Output ~ 0
+Text GLabel 7150 18400 0    50   Output ~ 0
 USB1_TX_P
-Text GLabel 8000 18300 0    50   Output ~ 0
+Text GLabel 7150 18300 0    50   Output ~ 0
 USB1_TX_N
 Text GLabel 17400 11050 2    50   Input ~ 0
 USB2_RX_P
@@ -2349,113 +2349,113 @@ Text GLabel 26200 12200 2    50   Input ~ 0
 DISP1_HS
 Text GLabel 26200 12300 2    50   Input ~ 0
 DISP1_DE
-Text GLabel 12500 4500 0    50   Input ~ 0
+Text GLabel 12800 4500 0    50   Input ~ 0
 DISP1_RGB0
-Text GLabel 12500 4400 0    50   Input ~ 0
+Text GLabel 12800 4400 0    50   Input ~ 0
 DISP1_RGB1
-Text GLabel 12500 4300 0    50   Input ~ 0
+Text GLabel 12800 4300 0    50   Input ~ 0
 DISP1_RGB2
-Text GLabel 12500 4200 0    50   Input ~ 0
+Text GLabel 12800 4200 0    50   Input ~ 0
 DISP1_RGB3
-Text GLabel 12500 4100 0    50   Input ~ 0
+Text GLabel 12800 4100 0    50   Input ~ 0
 DISP1_RGB4
-Text GLabel 12500 4000 0    50   Input ~ 0
+Text GLabel 12800 4000 0    50   Input ~ 0
 DISP1_RGB5
-Text GLabel 12500 3900 0    50   Input ~ 0
+Text GLabel 12800 3900 0    50   Input ~ 0
 DISP1_RGB6
-Text GLabel 12500 3800 0    50   Input ~ 0
+Text GLabel 12800 3800 0    50   Input ~ 0
 DISP1_RGB7
-Text GLabel 12500 3700 0    50   Input ~ 0
+Text GLabel 12800 3700 0    50   Input ~ 0
 DISP1_RGB8
-Text GLabel 12500 3600 0    50   Input ~ 0
+Text GLabel 12800 3600 0    50   Input ~ 0
 DISP1_RGB9
-Text GLabel 12500 3500 0    50   Input ~ 0
+Text GLabel 12800 3500 0    50   Input ~ 0
 DISP1_RGB10
-Text GLabel 12500 3400 0    50   Input ~ 0
+Text GLabel 12800 3400 0    50   Input ~ 0
 DISP1_RGB11
-Text GLabel 12500 3300 0    50   Input ~ 0
+Text GLabel 12800 3300 0    50   Input ~ 0
 DISP1_RGB12
-Text GLabel 12500 3200 0    50   Input ~ 0
+Text GLabel 12800 3200 0    50   Input ~ 0
 DISP1_RGB13
-Text GLabel 12500 3100 0    50   Input ~ 0
+Text GLabel 12800 3100 0    50   Input ~ 0
 DISP1_RGB14
-Text GLabel 12500 3000 0    50   Input ~ 0
+Text GLabel 12800 3000 0    50   Input ~ 0
 DISP1_RGB15
-Text GLabel 12500 2900 0    50   Input ~ 0
+Text GLabel 12800 2900 0    50   Input ~ 0
 DISP1_RGB16
-Text GLabel 12500 2800 0    50   Input ~ 0
+Text GLabel 12800 2800 0    50   Input ~ 0
 DISP1_RGB17
-Text GLabel 12500 2700 0    50   Input ~ 0
+Text GLabel 12800 2700 0    50   Input ~ 0
 DISP1_RGB18
-Text GLabel 12500 2600 0    50   Input ~ 0
+Text GLabel 12800 2600 0    50   Input ~ 0
 DISP1_RGB19
-Text GLabel 12500 2500 0    50   Input ~ 0
+Text GLabel 12800 2500 0    50   Input ~ 0
 DISP1_RGB20
-Text GLabel 12500 2400 0    50   Input ~ 0
+Text GLabel 12800 2400 0    50   Input ~ 0
 DISP1_RGB21
-Text GLabel 12500 2300 0    50   Input ~ 0
+Text GLabel 12800 2300 0    50   Input ~ 0
 DISP1_RGB22
-Text GLabel 12500 2200 0    50   Input ~ 0
+Text GLabel 12800 2200 0    50   Input ~ 0
 DISP1_RGB23
-Text GLabel 12500 4600 0    50   Input ~ 0
+Text GLabel 12800 4900 0    50   Output ~ 0
 DISP1_VS
-Text GLabel 12500 4700 0    50   Input ~ 0
+Text GLabel 12800 4800 0    50   Output ~ 0
 DISP1_HS
-Text GLabel 12500 4800 0    50   Input ~ 0
+Text GLabel 12800 5000 0    50   Output ~ 0
 DISP1_DE
-Text GLabel 16500 4500 2    50   Input ~ 0
+Text GLabel 16800 4500 2    50   Input ~ 0
 DISP2_RGB0
-Text GLabel 16500 4400 2    50   Input ~ 0
+Text GLabel 16800 4400 2    50   Input ~ 0
 DISP2_RGB1
-Text GLabel 16500 4300 2    50   Input ~ 0
+Text GLabel 16800 4300 2    50   Input ~ 0
 DISP2_RGB2
-Text GLabel 16500 4200 2    50   Input ~ 0
+Text GLabel 16800 4200 2    50   Input ~ 0
 DISP2_RGB3
-Text GLabel 16500 4100 2    50   Input ~ 0
+Text GLabel 16800 4100 2    50   Input ~ 0
 DISP2_RGB4
-Text GLabel 16500 4000 2    50   Input ~ 0
+Text GLabel 16800 4000 2    50   Input ~ 0
 DISP2_RGB5
-Text GLabel 16500 3900 2    50   Input ~ 0
+Text GLabel 16800 3900 2    50   Input ~ 0
 DISP2_RGB6
-Text GLabel 16500 3800 2    50   Input ~ 0
+Text GLabel 16800 3800 2    50   Input ~ 0
 DISP2_RGB7
-Text GLabel 16500 3700 2    50   Input ~ 0
+Text GLabel 16800 3700 2    50   Input ~ 0
 DISP2_RGB8
-Text GLabel 16500 3600 2    50   Input ~ 0
+Text GLabel 16800 3600 2    50   Input ~ 0
 DISP2_RGB9
-Text GLabel 16500 3500 2    50   Input ~ 0
+Text GLabel 16800 3500 2    50   Input ~ 0
 DISP2_RGB10
-Text GLabel 16500 3400 2    50   Input ~ 0
+Text GLabel 16800 3400 2    50   Input ~ 0
 DISP2_RGB11
-Text GLabel 16500 3300 2    50   Input ~ 0
+Text GLabel 16800 3300 2    50   Input ~ 0
 DISP2_RGB12
-Text GLabel 16500 3200 2    50   Input ~ 0
+Text GLabel 16800 3200 2    50   Input ~ 0
 DISP2_RGB13
-Text GLabel 16500 3100 2    50   Input ~ 0
+Text GLabel 16800 3100 2    50   Input ~ 0
 DISP2_RGB14
-Text GLabel 16500 3000 2    50   Input ~ 0
+Text GLabel 16800 3000 2    50   Input ~ 0
 DISP2_RGB15
-Text GLabel 16500 2900 2    50   Input ~ 0
+Text GLabel 16800 2900 2    50   Input ~ 0
 DISP2_RGB16
-Text GLabel 16500 2800 2    50   Input ~ 0
+Text GLabel 16800 2800 2    50   Input ~ 0
 DISP2_RGB17
-Text GLabel 16500 2700 2    50   Input ~ 0
+Text GLabel 16800 2700 2    50   Input ~ 0
 DISP2_RGB18
-Text GLabel 16500 2600 2    50   Input ~ 0
+Text GLabel 16800 2600 2    50   Input ~ 0
 DISP2_RGB19
-Text GLabel 16500 2500 2    50   Input ~ 0
+Text GLabel 16800 2500 2    50   Input ~ 0
 DISP2_RGB20
-Text GLabel 16500 2400 2    50   Input ~ 0
+Text GLabel 16800 2400 2    50   Input ~ 0
 DISP2_RGB21
-Text GLabel 16500 2300 2    50   Input ~ 0
+Text GLabel 16800 2300 2    50   Input ~ 0
 DISP2_RGB22
-Text GLabel 16500 2200 2    50   Input ~ 0
+Text GLabel 16800 2200 2    50   Input ~ 0
 DISP2_RGB23
-Text GLabel 16500 4600 2    50   Input ~ 0
+Text GLabel 16800 4900 2    50   Output ~ 0
 DISP2_VS
-Text GLabel 16500 4700 2    50   Input ~ 0
+Text GLabel 16800 4800 2    50   Output ~ 0
 DISP2_HS
-Text GLabel 16500 4800 2    50   Input ~ 0
+Text GLabel 16800 5000 2    50   Output ~ 0
 DISP2_DE
 Text GLabel 17750 11650 2    50   Input ~ 0
 PCIE1_CLK_N
@@ -2541,19 +2541,19 @@ Wire Wire Line
 	18650 9850 17950 9850
 Wire Wire Line
 	18250 9950 18650 9950
-Text GLabel 10150 2900 2    50   Input ~ 0
+Text GLabel 11300 2900 2    50   Input ~ 0
 UART2_RX
-Text GLabel 10150 3000 2    50   Output ~ 0
+Text GLabel 11300 3000 2    50   Output ~ 0
 UART2_TX
-Text GLabel 10150 3100 2    50   Input ~ 0
+Text GLabel 11300 3100 2    50   Input ~ 0
 UART1_RX
-Text GLabel 10150 3200 2    50   Output ~ 0
+Text GLabel 11300 3200 2    50   Output ~ 0
 UART1_TX
-Text GLabel 10150 2800 2    50   Input ~ 0
+Text GLabel 11300 2800 2    50   Input ~ 0
 SD2_CD
-Text GLabel 10150 3400 2    50   Input ~ 0
+Text GLabel 11300 3400 2    50   Input ~ 0
 UART3_RX
-Text GLabel 10150 3500 2    50   Output ~ 0
+Text GLabel 11300 3500 2    50   Output ~ 0
 UART3_TX
 $Comp
 L Device:C_Small C9
@@ -2656,7 +2656,7 @@ Text GLabel 30050 10300 0    50   Input ~ 0
 DISP2_DE
 Text GLabel 30050 10000 0    50   Input ~ 0
 DISP2_PCLK
-Text GLabel 16500 4900 2    50   Output ~ 0
+Text GLabel 16800 4600 2    50   Output ~ 0
 DISP2_PCLK
 Text Notes 30550 13450 0    50   ~ 0
 TODO: connector
@@ -3993,101 +3993,101 @@ Wire Wire Line
 $Comp
 L power:+3V3 #PWR0135
 U 1 1 61685552
-P 6550 850
-F 0 "#PWR0135" H 6550 700 50  0001 C CNN
-F 1 "+3V3" H 6565 1023 50  0000 C CNN
-F 2 "" H 6550 850 50  0001 C CNN
-F 3 "" H 6550 850 50  0001 C CNN
-	1    6550 850 
+P 7700 850
+F 0 "#PWR0135" H 7700 700 50  0001 C CNN
+F 1 "+3V3" H 7715 1023 50  0000 C CNN
+F 2 "" H 7700 850 50  0001 C CNN
+F 3 "" H 7700 850 50  0001 C CNN
+	1    7700 850 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6550 850  6550 1100
+	7700 850  7700 1100
 Wire Wire Line
-	6550 1100 6650 1100
+	7700 1100 7800 1100
 Wire Wire Line
-	6650 1100 6650 1300
-Connection ~ 6550 1100
+	7800 1100 7800 1300
+Connection ~ 7700 1100
 Wire Wire Line
-	6550 1100 6550 1300
+	7700 1100 7700 1300
 Wire Wire Line
-	6650 1100 6750 1100
+	7800 1100 7900 1100
 Wire Wire Line
-	6750 1100 6750 1300
-Connection ~ 6650 1100
+	7900 1100 7900 1300
+Connection ~ 7800 1100
 Wire Wire Line
-	6750 1100 6850 1100
+	7900 1100 8000 1100
 Wire Wire Line
-	6850 1100 6850 1300
-Connection ~ 6750 1100
+	8000 1100 8000 1300
+Connection ~ 7900 1100
 Wire Wire Line
-	6850 1100 6950 1100
+	8000 1100 8100 1100
 Wire Wire Line
-	6950 1100 6950 1300
-Connection ~ 6850 1100
+	8100 1100 8100 1300
+Connection ~ 8000 1100
 Wire Wire Line
-	6950 1100 7050 1100
+	8100 1100 8200 1100
 Wire Wire Line
-	7050 1100 7050 1300
-Connection ~ 6950 1100
-Text GLabel 5950 2200 0    50   BiDi ~ 0
+	8200 1100 8200 1300
+Connection ~ 8100 1100
+Text GLabel 7200 2200 0    50   BiDi ~ 0
 QSPI_DQ0
 Wire Wire Line
-	5950 2200 6150 2200
-Text GLabel 5950 2300 0    50   BiDi ~ 0
+	7200 2200 7300 2200
+Text GLabel 7200 2300 0    50   BiDi ~ 0
 QSPI_DQ1
-Text GLabel 5950 2400 0    50   BiDi ~ 0
+Text GLabel 7200 2400 0    50   BiDi ~ 0
 QSPI_DQ2
-Text GLabel 5950 2500 0    50   BiDi ~ 0
+Text GLabel 7200 2500 0    50   BiDi ~ 0
 QSPI_DQ3
 Wire Wire Line
-	5950 2300 6150 2300
+	7200 2300 7300 2300
 Wire Wire Line
-	6150 2400 5950 2400
+	7300 2400 7200 2400
 Wire Wire Line
-	5950 2500 6150 2500
-Text Notes 5550 1750 0    50   ~ 0
+	7200 2500 7300 2500
+Text Notes 6700 1750 0    50   ~ 0
 TODO: PUDC? \nEMCCLK?\nFCS_B?
 $Comp
 L power:+3V3 #PWR0136
 U 1 1 61993565
-P 9250 850
-F 0 "#PWR0136" H 9250 700 50  0001 C CNN
-F 1 "+3V3" H 9265 1023 50  0000 C CNN
-F 2 "" H 9250 850 50  0001 C CNN
-F 3 "" H 9250 850 50  0001 C CNN
-	1    9250 850 
+P 10400 850
+F 0 "#PWR0136" H 10400 700 50  0001 C CNN
+F 1 "+3V3" H 10415 1023 50  0000 C CNN
+F 2 "" H 10400 850 50  0001 C CNN
+F 3 "" H 10400 850 50  0001 C CNN
+	1    10400 850 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9250 850  9250 1100
+	10400 850  10400 1100
 Wire Wire Line
-	9250 1100 9350 1100
+	10400 1100 10500 1100
 Wire Wire Line
-	9350 1100 9350 1300
-Connection ~ 9250 1100
+	10500 1100 10500 1300
+Connection ~ 10400 1100
 Wire Wire Line
-	9250 1100 9250 1300
+	10400 1100 10400 1300
 Wire Wire Line
-	9350 1100 9450 1100
+	10500 1100 10600 1100
 Wire Wire Line
-	9450 1100 9450 1300
-Connection ~ 9350 1100
+	10600 1100 10600 1300
+Connection ~ 10500 1100
 Wire Wire Line
-	9450 1100 9550 1100
+	10600 1100 10700 1100
 Wire Wire Line
-	9550 1100 9550 1300
-Connection ~ 9450 1100
+	10700 1100 10700 1300
+Connection ~ 10600 1100
 Wire Wire Line
-	9550 1100 9650 1100
+	10700 1100 10800 1100
 Wire Wire Line
-	9650 1100 9650 1300
-Connection ~ 9550 1100
+	10800 1100 10800 1300
+Connection ~ 10700 1100
 Wire Wire Line
-	9650 1100 9750 1100
+	10800 1100 10900 1100
 Wire Wire Line
-	9750 1100 9750 1300
-Connection ~ 9650 1100
+	10900 1100 10900 1300
+Connection ~ 10800 1100
 Text Notes 22450 4550 0    50   ~ 0
 antmicro use ASFLMB-100.000MHZ-XY-T
 Text Notes 8650 8350 0    50   ~ 0
@@ -4609,15 +4609,8 @@ Connection ~ 11000 22400
 Wire Wire Line
 	11000 22400 11000 22300
 Wire Wire Line
-	11000 22500 10750 22500
-Connection ~ 11000 22500
-Wire Wire Line
-	11000 22500 11000 22400
-Wire Wire Line
 	10750 22600 11000 22600
 Connection ~ 11000 22600
-Wire Wire Line
-	11000 22600 11000 22500
 Wire Wire Line
 	11000 22700 10750 22700
 Connection ~ 11000 22700
@@ -4788,7 +4781,7 @@ Wire Wire Line
 	23400 9600 23400 9550
 Text GLabel 24300 11300 0    50   Input ~ 0
 DISP1_CLK
-Text GLabel 12500 4900 0    50   Input ~ 0
+Text GLabel 12800 4600 0    50   Output ~ 0
 DISP1_CLK
 $Comp
 L power:+1V8 #PWR?
@@ -5078,49 +5071,49 @@ Wire Wire Line
 	38400 11800 38250 11800
 Wire Wire Line
 	38250 11900 38400 11900
-Text GLabel 10150 3700 2    50   Output ~ 0
+Text GLabel 11300 3700 2    50   Output ~ 0
 ETH_REF_CLK
-Text GLabel 10150 3800 2    50   BiDi ~ 0
+Text GLabel 11300 3800 2    50   BiDi ~ 0
 ETH_MDIO
-Text GLabel 10150 3900 2    50   Output ~ 0
+Text GLabel 11300 3900 2    50   Output ~ 0
 ETH_MDC
-Text GLabel 10150 4000 2    50   Input ~ 0
+Text GLabel 11300 4000 2    50   Input ~ 0
 ETH_INT_N
-Text GLabel 10150 4900 2    50   Input ~ 0
+Text GLabel 11300 4900 2    50   Input ~ 0
 ETH_RX_D0
-Text GLabel 10150 5000 2    50   Input ~ 0
+Text GLabel 11300 5000 2    50   Input ~ 0
 ETH_RX_D1
-Text GLabel 10150 5100 2    50   Input ~ 0
+Text GLabel 11300 5100 2    50   Input ~ 0
 ETH_RX_D2
-Text GLabel 10150 5200 2    50   Input ~ 0
+Text GLabel 11300 5200 2    50   Input ~ 0
 ETH_RX_D3
-Text GLabel 10150 4800 2    50   Output ~ 0
+Text GLabel 11300 4800 2    50   Output ~ 0
 ETH_RX_DV
-Text GLabel 10150 4300 2    50   Output ~ 0
+Text GLabel 11300 4300 2    50   Output ~ 0
 ETH_TX_D0
-Text GLabel 10150 4400 2    50   Output ~ 0
+Text GLabel 11300 4400 2    50   Output ~ 0
 ETH_TX_D1
-Text GLabel 10150 4500 2    50   Output ~ 0
+Text GLabel 11300 4500 2    50   Output ~ 0
 ETH_TX_D2
-Text GLabel 10150 4600 2    50   Output ~ 0
+Text GLabel 11300 4600 2    50   Output ~ 0
 ETH_TX_D3
-Text GLabel 10150 4700 2    50   Output ~ 0
+Text GLabel 11300 4700 2    50   Output ~ 0
 ETH_TX_CLK
-Text GLabel 10150 4200 2    50   Output ~ 0
+Text GLabel 11300 4200 2    50   Output ~ 0
 ETH_TX_EN
-Text GLabel 10150 4100 2    50   Output ~ 0
+Text GLabel 11300 4100 2    50   Output ~ 0
 ETH_RST_N
 Text GLabel 35450 11600 0    50   Input ~ 0
 ETH_RX_CLK
 Wire Wire Line
 	35450 11600 35650 11600
-Text GLabel 10150 5300 2    50   Output ~ 0
+Text GLabel 11300 5300 2    50   Output ~ 0
 ETH_RX_CLK
-Text Notes 10700 4450 0    50   ~ 0
+Text Notes 11350 5800 0    50   ~ 0
 TODO: floorplan
-Text Notes 11700 1850 0    50   ~ 0
+Text Notes 12000 1850 0    50   ~ 0
 TODO: floorplan
-Text Notes 16450 1900 0    50   ~ 0
+Text Notes 16750 1900 0    50   ~ 0
 TODO: floorplan
 $Comp
 L power:+1V1 #PWR?
@@ -5624,97 +5617,97 @@ $EndComp
 $Comp
 L power:+1V8 #PWR?
 U 1 1 609413F3
-P 12900 900
-F 0 "#PWR?" H 12900 750 50  0001 C CNN
-F 1 "+1V8" H 12915 1073 50  0000 C CNN
-F 2 "" H 12900 900 50  0001 C CNN
-F 3 "" H 12900 900 50  0001 C CNN
-	1    12900 900 
+P 13200 900
+F 0 "#PWR?" H 13200 750 50  0001 C CNN
+F 1 "+1V8" H 13215 1073 50  0000 C CNN
+F 2 "" H 13200 900 50  0001 C CNN
+F 3 "" H 13200 900 50  0001 C CNN
+	1    13200 900 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	12900 900  12900 1050
+	13200 900  13200 1050
 Wire Wire Line
-	12900 1050 13000 1050
+	13200 1050 13300 1050
 Wire Wire Line
-	13500 1050 13500 1300
-Connection ~ 12900 1050
+	13800 1050 13800 1300
+Connection ~ 13200 1050
 Wire Wire Line
-	12900 1050 12900 1300
+	13200 1050 13200 1300
 Wire Wire Line
-	13400 1300 13400 1050
+	13700 1300 13700 1050
+Connection ~ 13700 1050
+Wire Wire Line
+	13700 1050 13800 1050
+Wire Wire Line
+	13600 1050 13600 1300
+Connection ~ 13600 1050
+Wire Wire Line
+	13600 1050 13700 1050
+Wire Wire Line
+	13500 1300 13500 1050
+Connection ~ 13500 1050
+Wire Wire Line
+	13500 1050 13600 1050
+Wire Wire Line
+	13400 1050 13400 1300
 Connection ~ 13400 1050
 Wire Wire Line
 	13400 1050 13500 1050
 Wire Wire Line
-	13300 1050 13300 1300
+	13300 1300 13300 1050
 Connection ~ 13300 1050
 Wire Wire Line
 	13300 1050 13400 1050
-Wire Wire Line
-	13200 1300 13200 1050
-Connection ~ 13200 1050
-Wire Wire Line
-	13200 1050 13300 1050
-Wire Wire Line
-	13100 1050 13100 1300
-Connection ~ 13100 1050
-Wire Wire Line
-	13100 1050 13200 1050
-Wire Wire Line
-	13000 1300 13000 1050
-Connection ~ 13000 1050
-Wire Wire Line
-	13000 1050 13100 1050
 $Comp
 L power:+1V8 #PWR?
 U 1 1 60F34F7F
-P 15600 900
-F 0 "#PWR?" H 15600 750 50  0001 C CNN
-F 1 "+1V8" H 15615 1073 50  0000 C CNN
-F 2 "" H 15600 900 50  0001 C CNN
-F 3 "" H 15600 900 50  0001 C CNN
-	1    15600 900 
+P 15900 900
+F 0 "#PWR?" H 15900 750 50  0001 C CNN
+F 1 "+1V8" H 15915 1073 50  0000 C CNN
+F 2 "" H 15900 900 50  0001 C CNN
+F 3 "" H 15900 900 50  0001 C CNN
+	1    15900 900 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	15600 900  15600 1050
+	15900 900  15900 1050
 Wire Wire Line
-	15600 1050 15700 1050
-Connection ~ 15600 1050
+	15900 1050 16000 1050
+Connection ~ 15900 1050
 Wire Wire Line
-	15600 1050 15600 1300
+	15900 1050 15900 1300
 Wire Wire Line
-	16100 1300 16100 1050
+	16400 1300 16400 1050
 Wire Wire Line
-	16000 1050 16000 1300
+	16300 1050 16300 1300
+Connection ~ 16300 1050
+Wire Wire Line
+	16300 1050 16400 1050
+Wire Wire Line
+	16200 1300 16200 1050
+Connection ~ 16200 1050
+Wire Wire Line
+	16200 1050 16300 1050
+Wire Wire Line
+	16100 1050 16100 1300
+Connection ~ 16100 1050
+Wire Wire Line
+	16100 1050 16200 1050
+Wire Wire Line
+	16000 1300 16000 1050
 Connection ~ 16000 1050
 Wire Wire Line
 	16000 1050 16100 1050
-Wire Wire Line
-	15900 1300 15900 1050
-Connection ~ 15900 1050
-Wire Wire Line
-	15900 1050 16000 1050
-Wire Wire Line
-	15800 1050 15800 1300
-Connection ~ 15800 1050
-Wire Wire Line
-	15800 1050 15900 1050
-Wire Wire Line
-	15700 1300 15700 1050
-Connection ~ 15700 1050
-Wire Wire Line
-	15700 1050 15800 1050
 $Comp
 L FPGA_Xilinx_Kintex7:XC7K160T-FFG676 U2
 U 3 1 5FFB9197
-P 14500 4200
-F 0 "U2" H 14500 1225 50  0000 C CNN
-F 1 "XC7K160T-FFG676" H 14500 1134 50  0000 C CNN
-F 2 "Package_BGA:Xilinx_FFG676" H 14500 4200 50  0001 C CNN
-F 3 "" H 14500 4200 50  0000 C CNN
-	3    14500 4200
+P 14800 4200
+F 0 "U2" H 14800 1225 50  0000 C CNN
+F 1 "XC7K160T-FFG676" H 14800 1134 50  0000 C CNN
+F 2 "Package_BGA:Xilinx_FFG676" H 14800 4200 50  0001 C CNN
+F 3 "" H 14800 4200 50  0000 C CNN
+	3    14800 4200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -5803,35 +5796,35 @@ Wire Wire Line
 $Comp
 L power:+5V #PWR?
 U 1 1 6175B49C
-P 6100 17900
-F 0 "#PWR?" H 6100 17750 50  0001 C CNN
-F 1 "+5V" H 6115 18073 50  0000 C CNN
-F 2 "" H 6100 17900 50  0001 C CNN
-F 3 "" H 6100 17900 50  0001 C CNN
-	1    6100 17900
+P 6000 17600
+F 0 "#PWR?" H 6000 17450 50  0001 C CNN
+F 1 "+5V" H 6015 17773 50  0000 C CNN
+F 2 "" H 6000 17600 50  0001 C CNN
+F 3 "" H 6000 17600 50  0001 C CNN
+	1    6000 17600
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R?
 U 1 1 6175FFE1
-P 6350 18000
-F 0 "R?" V 6154 18000 50  0000 C CNN
-F 1 "90.9k 1%" V 6245 18000 50  0000 C CNN
-F 2 "" H 6350 18000 50  0001 C CNN
-F 3 "~" H 6350 18000 50  0001 C CNN
-	1    6350 18000
+P 6200 18000
+F 0 "R?" V 6004 18000 50  0000 C CNN
+F 1 "90.9k 1%" V 6095 18000 50  0000 C CNN
+F 2 "" H 6200 18000 50  0001 C CNN
+F 3 "~" H 6200 18000 50  0001 C CNN
+	1    6200 18000
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	6450 18000 6550 18000
+	6300 18000 6400 18000
 Wire Wire Line
-	6250 18000 6100 18000
+	6100 18000 6000 18000
 Wire Wire Line
-	6100 18000 6100 17900
-Text GLabel 2400 17800 0    50   Input ~ 0
+	6000 18000 6000 17600
+Text GLabel 2450 17800 0    50   Input ~ 0
 TUSB_PHYRESETN
 Wire Wire Line
-	2400 17800 2750 17800
+	2450 17800 2750 17800
 Text GLabel 2450 20200 0    50   BiDi ~ 0
 TUSB_TX_D0
 Wire Wire Line
@@ -5896,198 +5889,196 @@ Wire Wire Line
 	2450 21500 2750 21500
 Wire Wire Line
 	2450 21700 2750 21700
-Text GLabel 5250 20200 2    50   BiDi ~ 0
+Text GLabel 5100 20200 2    50   BiDi ~ 0
 TUSB_RX_D15
 Wire Wire Line
-	5250 20200 4950 20200
-Text GLabel 5250 21700 2    50   BiDi ~ 0
+	5100 20200 4950 20200
+Text GLabel 5100 21700 2    50   BiDi ~ 0
 TUSB_TX_D8
 Wire Wire Line
-	5250 20400 4950 20400
-Text GLabel 5250 21500 2    50   BiDi ~ 0
+	5100 20400 4950 20400
+Text GLabel 5100 21500 2    50   BiDi ~ 0
 TUSB_TX_D9
 Wire Wire Line
-	5250 20600 4950 20600
-Text GLabel 5250 21300 2    50   BiDi ~ 0
+	5100 20600 4950 20600
+Text GLabel 5100 21300 2    50   BiDi ~ 0
 TUSB_TX_D10
 Wire Wire Line
-	5250 20800 4950 20800
-Text GLabel 5250 21100 2    50   BiDi ~ 0
+	5100 20800 4950 20800
+Text GLabel 5100 21100 2    50   BiDi ~ 0
 TUSB_TX_D11
 Wire Wire Line
-	5250 21000 4950 21000
-Text GLabel 5250 20900 2    50   BiDi ~ 0
+	5100 21000 4950 21000
+Text GLabel 5100 20900 2    50   BiDi ~ 0
 TUSB_TX_D12
 Wire Wire Line
-	5250 21200 4950 21200
-Text GLabel 5250 20700 2    50   BiDi ~ 0
+	5100 21200 4950 21200
+Text GLabel 5100 20700 2    50   BiDi ~ 0
 TUSB_TX_D13
 Wire Wire Line
-	5250 21400 4950 21400
-Text GLabel 5250 20500 2    50   BiDi ~ 0
+	5100 21400 4950 21400
+Text GLabel 5100 20500 2    50   BiDi ~ 0
 TUSB_TX_D14
 Wire Wire Line
-	5250 21600 4950 21600
-Text GLabel 5250 20300 2    50   BiDi ~ 0
+	5100 21600 4950 21600
+Text GLabel 5100 20300 2    50   BiDi ~ 0
 TUSB_RX_D15
-Text GLabel 5250 21600 2    50   BiDi ~ 0
+Text GLabel 5100 21600 2    50   BiDi ~ 0
 TUSB_RX_D8
-Text GLabel 5250 21400 2    50   BiDi ~ 0
+Text GLabel 5100 21400 2    50   BiDi ~ 0
 TUSB_RX_D9
-Text GLabel 5250 21200 2    50   BiDi ~ 0
+Text GLabel 5100 21200 2    50   BiDi ~ 0
 TUSB_RX_D10
-Text GLabel 5250 21000 2    50   BiDi ~ 0
+Text GLabel 5100 21000 2    50   BiDi ~ 0
 TUSB_RX_D11
-Text GLabel 5250 20800 2    50   BiDi ~ 0
+Text GLabel 5100 20800 2    50   BiDi ~ 0
 TUSB_RX_D12
-Text GLabel 5250 20600 2    50   BiDi ~ 0
+Text GLabel 5100 20600 2    50   BiDi ~ 0
 TUSB_RX_D13
-Text GLabel 5250 20400 2    50   BiDi ~ 0
+Text GLabel 5100 20400 2    50   BiDi ~ 0
 TUSB_RX_D14
 Wire Wire Line
-	5250 20300 4950 20300
+	5100 20300 4950 20300
 Wire Wire Line
-	5250 20500 4950 20500
+	5100 20500 4950 20500
 Wire Wire Line
-	5250 20700 4950 20700
+	5100 20700 4950 20700
 Wire Wire Line
-	5250 20900 4950 20900
+	5100 20900 4950 20900
 Wire Wire Line
-	5250 21100 4950 21100
+	5100 21100 4950 21100
 Wire Wire Line
-	5250 21300 4950 21300
+	5100 21300 4950 21300
 Wire Wire Line
-	5250 21500 4950 21500
+	5100 21500 4950 21500
 Wire Wire Line
-	5250 21700 4950 21700
-Text GLabel 12200 5500 0    50   BiDi ~ 0
+	5100 21700 4950 21700
+Text GLabel 5500 3900 2    50   BiDi ~ 0
 TUSB_TX_D0
 Wire Wire Line
-	12200 5500 12500 5500
-Text GLabel 12200 5700 0    50   BiDi ~ 0
+	12650 5500 12800 5500
+Text GLabel 5500 3800 2    50   BiDi ~ 0
 TUSB_TX_D1
 Wire Wire Line
-	12200 5700 12500 5700
-Text GLabel 12200 5900 0    50   BiDi ~ 0
+	12650 5700 12800 5700
+Text GLabel 5500 3700 2    50   BiDi ~ 0
 TUSB_TX_D2
 Wire Wire Line
-	12200 5900 12500 5900
-Text GLabel 12200 6100 0    50   BiDi ~ 0
+	12650 5900 12800 5900
+Text GLabel 5500 3600 2    50   BiDi ~ 0
 TUSB_TX_D3
 Wire Wire Line
-	12200 6100 12500 6100
-Text GLabel 12200 6300 0    50   BiDi ~ 0
+	12650 6100 12800 6100
+Text GLabel 5500 3500 2    50   BiDi ~ 0
 TUSB_TX_D4
 Wire Wire Line
-	12200 6300 12500 6300
-Text GLabel 12200 6500 0    50   BiDi ~ 0
+	12650 6300 12800 6300
+Text GLabel 5500 3400 2    50   BiDi ~ 0
 TUSB_TX_D5
 Wire Wire Line
-	12200 6500 12500 6500
-Text GLabel 12200 6700 0    50   BiDi ~ 0
+	12650 6500 12800 6500
+Text GLabel 5500 3300 2    50   BiDi ~ 0
 TUSB_TX_D6
 Wire Wire Line
-	12200 6700 12500 6700
-Text GLabel 12200 6900 0    50   BiDi ~ 0
+	12650 6700 12800 6700
+Text GLabel 5500 3200 2    50   BiDi ~ 0
 TUSB_TX_D7
 Wire Wire Line
-	12200 6900 12500 6900
-Text GLabel 12200 5600 0    50   BiDi ~ 0
+	12650 6900 12800 6900
+Text GLabel 5500 7000 2    50   BiDi ~ 0
 TUSB_RX_D0
-Text GLabel 12200 5800 0    50   BiDi ~ 0
+Text GLabel 5500 6900 2    50   BiDi ~ 0
 TUSB_RX_D1
-Text GLabel 12200 6000 0    50   BiDi ~ 0
+Text GLabel 5500 6800 2    50   BiDi ~ 0
 TUSB_RX_D2
-Text GLabel 12200 6200 0    50   BiDi ~ 0
+Text GLabel 5500 6700 2    50   BiDi ~ 0
 TUSB_RX_D3
-Text GLabel 12200 6400 0    50   BiDi ~ 0
+Text GLabel 5500 6600 2    50   BiDi ~ 0
 TUSB_RX_D4
-Text GLabel 12200 6600 0    50   BiDi ~ 0
+Text GLabel 5500 6500 2    50   BiDi ~ 0
 TUSB_RX_D5
-Text GLabel 12200 6800 0    50   BiDi ~ 0
+Text GLabel 5500 6400 2    50   BiDi ~ 0
 TUSB_RX_D6
-Text GLabel 12200 7000 0    50   BiDi ~ 0
+Text GLabel 5500 6300 2    50   BiDi ~ 0
 TUSB_RX_D7
 Wire Wire Line
-	12200 5600 12500 5600
+	12650 5600 12800 5600
 Wire Wire Line
-	12200 5800 12500 5800
+	12650 5800 12800 5800
 Wire Wire Line
-	12200 6000 12500 6000
+	12650 6000 12800 6000
 Wire Wire Line
-	12200 6200 12500 6200
+	12650 6200 12800 6200
 Wire Wire Line
-	12200 6400 12500 6400
+	12650 6400 12800 6400
 Wire Wire Line
-	12200 6600 12500 6600
+	12650 6600 12800 6600
 Wire Wire Line
-	12200 6800 12500 6800
+	12650 6800 12800 6800
 Wire Wire Line
-	12200 7000 12500 7000
-Text GLabel 16800 5500 2    50   BiDi ~ 0
+	12650 7000 12800 7000
+Text GLabel 5500 5500 2    50   BiDi ~ 0
 TUSB_RX_D15
 Wire Wire Line
-	16800 5500 16500 5500
-Text GLabel 16800 7000 2    50   BiDi ~ 0
+	16950 5500 16800 5500
+Text GLabel 5500 3100 2    50   BiDi ~ 0
 TUSB_TX_D8
 Wire Wire Line
-	16800 5700 16500 5700
-Text GLabel 16800 6800 2    50   BiDi ~ 0
+	16950 5700 16800 5700
+Text GLabel 5500 3000 2    50   BiDi ~ 0
 TUSB_TX_D9
 Wire Wire Line
-	16800 5900 16500 5900
-Text GLabel 16800 6600 2    50   BiDi ~ 0
+	16950 5900 16800 5900
+Text GLabel 5500 2900 2    50   BiDi ~ 0
 TUSB_TX_D10
 Wire Wire Line
-	16800 6100 16500 6100
-Text GLabel 16800 6400 2    50   BiDi ~ 0
+	16950 6100 16800 6100
+Text GLabel 5500 2800 2    50   BiDi ~ 0
 TUSB_TX_D11
 Wire Wire Line
-	16800 6300 16500 6300
-Text GLabel 16800 6200 2    50   BiDi ~ 0
+	16950 6300 16800 6300
+Text GLabel 5500 2700 2    50   BiDi ~ 0
 TUSB_TX_D12
 Wire Wire Line
-	16800 6500 16500 6500
-Text GLabel 16800 6000 2    50   BiDi ~ 0
+	16950 6500 16800 6500
+Text GLabel 5500 2600 2    50   BiDi ~ 0
 TUSB_TX_D13
 Wire Wire Line
-	16800 6700 16500 6700
-Text GLabel 16800 5800 2    50   BiDi ~ 0
+	16950 6700 16800 6700
+Text GLabel 5500 2500 2    50   BiDi ~ 0
 TUSB_TX_D14
 Wire Wire Line
-	16800 6900 16500 6900
-Text GLabel 16800 5600 2    50   BiDi ~ 0
-TUSB_RX_D15
-Text GLabel 16800 6900 2    50   BiDi ~ 0
+	16950 6900 16800 6900
+Text GLabel 5500 6200 2    50   BiDi ~ 0
 TUSB_RX_D8
-Text GLabel 16800 6700 2    50   BiDi ~ 0
+Text GLabel 5500 6100 2    50   BiDi ~ 0
 TUSB_RX_D9
-Text GLabel 16800 6500 2    50   BiDi ~ 0
+Text GLabel 5500 6000 2    50   BiDi ~ 0
 TUSB_RX_D10
-Text GLabel 16800 6300 2    50   BiDi ~ 0
+Text GLabel 5500 5900 2    50   BiDi ~ 0
 TUSB_RX_D11
-Text GLabel 16800 6100 2    50   BiDi ~ 0
+Text GLabel 5500 5800 2    50   BiDi ~ 0
 TUSB_RX_D12
-Text GLabel 16800 5900 2    50   BiDi ~ 0
+Text GLabel 5500 5700 2    50   BiDi ~ 0
 TUSB_RX_D13
-Text GLabel 16800 5700 2    50   BiDi ~ 0
+Text GLabel 5500 5600 2    50   BiDi ~ 0
 TUSB_RX_D14
 Wire Wire Line
-	16800 5600 16500 5600
+	16950 5600 16800 5600
 Wire Wire Line
-	16800 5800 16500 5800
+	16950 5800 16800 5800
 Wire Wire Line
-	16800 6000 16500 6000
+	16950 6000 16800 6000
 Wire Wire Line
-	16800 6200 16500 6200
+	16950 6200 16800 6200
 Wire Wire Line
-	16800 6400 16500 6400
+	16950 6400 16800 6400
 Wire Wire Line
-	16800 6600 16500 6600
+	16950 6600 16800 6600
 Wire Wire Line
-	16800 6800 16500 6800
+	16950 6800 16800 6800
 Wire Wire Line
-	16800 7000 16500 7000
+	16950 7000 16800 7000
 Text GLabel 2550 22850 0    50   BiDi ~ 0
 TUSB_ULPI_D0
 Wire Wire Line
@@ -6120,71 +6111,71 @@ Text GLabel 2550 23550 0    50   BiDi ~ 0
 TUSB_ULPI_D7
 Wire Wire Line
 	2550 23550 2850 23550
-Text GLabel 5250 22650 2    50   BiDi ~ 0
+Text GLabel 5100 22650 2    50   Output ~ 0
 TUSB_ULPI_DIR
 Wire Wire Line
-	4850 22650 5250 22650
-Text GLabel 1100 6300 0    50   BiDi ~ 0
+	4850 22650 5100 22650
+Text GLabel 1400 6300 0    50   BiDi ~ 0
 TUSB_ULPI_D0
 Wire Wire Line
-	1100 6300 1200 6300
-Text GLabel 1100 6500 0    50   BiDi ~ 0
+	1400 6300 1500 6300
+Text GLabel 1400 6500 0    50   BiDi ~ 0
 TUSB_ULPI_D2
 Wire Wire Line
-	1100 6500 1200 6500
-Text GLabel 1100 6700 0    50   BiDi ~ 0
+	1400 6500 1500 6500
+Text GLabel 1400 6700 0    50   BiDi ~ 0
 TUSB_ULPI_D4
 Wire Wire Line
-	1100 6700 1200 6700
-Text GLabel 1100 6900 0    50   BiDi ~ 0
+	1400 6700 1500 6700
+Text GLabel 1400 6900 0    50   BiDi ~ 0
 TUSB_ULPI_D6
 Wire Wire Line
-	1100 6900 1200 6900
-Text GLabel 1100 6400 0    50   BiDi ~ 0
+	1400 6900 1500 6900
+Text GLabel 1400 6400 0    50   BiDi ~ 0
 TUSB_ULPI_D1
-Text GLabel 1100 6600 0    50   BiDi ~ 0
+Text GLabel 1400 6600 0    50   BiDi ~ 0
 TUSB_ULPI_D3
-Text GLabel 1100 6800 0    50   BiDi ~ 0
+Text GLabel 1400 6800 0    50   BiDi ~ 0
 TUSB_ULPI_D5
 Wire Wire Line
-	1100 6400 1200 6400
+	1400 6400 1500 6400
 Wire Wire Line
-	1100 6600 1200 6600
+	1400 6600 1500 6600
 Wire Wire Line
-	1100 6800 1200 6800
-Text GLabel 1100 7000 0    50   BiDi ~ 0
+	1400 6800 1500 6800
+Text GLabel 1400 7000 0    50   BiDi ~ 0
 TUSB_ULPI_D7
 Wire Wire Line
-	1100 7000 1200 7000
+	1400 7000 1500 7000
 $Comp
 L Device:R_Small R?
 U 1 1 6134BB70
-P 6550 18250
-F 0 "R?" V 6354 18250 50  0000 C CNN
-F 1 "10k 1%" V 6445 18250 50  0000 C CNN
-F 2 "" H 6550 18250 50  0001 C CNN
-F 3 "~" H 6550 18250 50  0001 C CNN
-	1    6550 18250
+P 6400 18250
+F 0 "R?" V 6204 18250 50  0000 C CNN
+F 1 "10k 1%" V 6295 18250 50  0000 C CNN
+F 2 "" H 6400 18250 50  0001 C CNN
+F 3 "~" H 6400 18250 50  0001 C CNN
+	1    6400 18250
 	-1   0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 614677D2
-P 6550 18450
-F 0 "#PWR?" H 6550 18200 50  0001 C CNN
-F 1 "GND" H 6555 18277 50  0000 C CNN
-F 2 "" H 6550 18450 50  0001 C CNN
-F 3 "" H 6550 18450 50  0001 C CNN
-	1    6550 18450
+P 6400 18450
+F 0 "#PWR?" H 6400 18200 50  0001 C CNN
+F 1 "GND" H 6405 18277 50  0000 C CNN
+F 2 "" H 6400 18450 50  0001 C CNN
+F 3 "" H 6400 18450 50  0001 C CNN
+	1    6400 18450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6550 18450 6550 18350
+	6400 18450 6400 18350
 Wire Wire Line
-	6550 18150 6550 18000
-Connection ~ 6550 18000
+	6400 18150 6400 18000
+Connection ~ 6400 18000
 Wire Wire Line
-	6550 18000 8000 18000
+	6400 18000 8000 18000
 $Comp
 L Device:Crystal_GND24_Small Y?
 U 1 1 61B24FC3
@@ -6222,19 +6213,6 @@ Wire Wire Line
 	7450 19250 7750 19250
 Wire Wire Line
 	7750 19250 7750 19350
-$Comp
-L power:GND #PWR?
-U 1 1 61B24FD7
-P 7350 19700
-F 0 "#PWR?" H 7350 19450 50  0001 C CNN
-F 1 "GND" H 7355 19527 50  0000 C CNN
-F 2 "" H 7350 19700 50  0001 C CNN
-F 3 "" H 7350 19700 50  0001 C CNN
-	1    7350 19700
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	7350 19700 7350 19650
 Wire Wire Line
 	7750 19550 7750 19650
 Wire Wire Line
@@ -6437,14 +6415,14 @@ Wire Wire Line
 Connection ~ 10550 18600
 Wire Wire Line
 	10550 18600 10550 18550
-Text GLabel 2350 18200 0    50   Input ~ 0
+Text GLabel 2450 18200 0    50   Input ~ 0
 TUSB_TX_ELECIDLE
 Wire Wire Line
-	2350 18200 2750 18200
-Text GLabel 2350 18300 0    50   BiDi ~ 0
+	2450 18200 2750 18200
+Text GLabel 2450 18300 0    50   BiDi ~ 0
 TUSB_RX_ELECIDLE
 Wire Wire Line
-	2350 18300 2750 18300
+	2450 18300 2750 18300
 Text GLabel 5100 17800 2    50   Output ~ 0
 TUSB_RX_STAT0
 Wire Wire Line
@@ -6457,48 +6435,533 @@ Text GLabel 5100 18000 2    50   Output ~ 0
 TUSB_RX_STAT2
 Wire Wire Line
 	5100 18000 4950 18000
-Text GLabel 2350 18000 0    50   Input ~ 0
+Text GLabel 2450 18000 0    50   Input ~ 0
 TUSB_PDOWN0
 Wire Wire Line
-	2350 18000 2750 18000
-Text GLabel 2350 18100 0    50   Input ~ 0
+	2450 18000 2750 18000
+Text GLabel 2450 18100 0    50   Input ~ 0
 TUSB_PDOWN1
 Wire Wire Line
-	2350 18100 2750 18100
-Text GLabel 2350 18400 0    50   BiDi ~ 0
+	2450 18100 2750 18100
+Text GLabel 2450 18400 0    50   BiDi ~ 0
 TUSB_PHY_STATUS
 Wire Wire Line
-	2350 18400 2750 18400
-Text GLabel 2350 18600 0    50   Input ~ 0
-TUSB_ONEZERO
+	2450 18400 2750 18400
+Text GLabel 5100 22750 2    50   Output ~ 0
+TUSB_ULPI_CLK
 Wire Wire Line
-	2350 18600 2750 18600
-Text GLabel 2350 18700 0    50   Input ~ 0
-TUSB_TX_DEEMPH0
-Text GLabel 2350 18800 0    50   Input ~ 0
-TUSB_TX_DEEMPH1
-Text GLabel 2350 18900 0    50   Input ~ 0
-TUSB_TX_MARGIN0
-Text GLabel 2350 19000 0    50   Input ~ 0
-TUSB_TX_MARGIN1
-Text GLabel 2350 19100 0    50   Input ~ 0
-TUSB_TX_MARGIN2
-Text GLabel 2350 19200 0    50   Input ~ 0
-TUSB_TX_SWING
+	5100 22750 4850 22750
+Text Notes 4550 22400 0    50   ~ 0
+TUSB is ULPI master
+Text GLabel 2550 22650 0    50   Input ~ 0
+TUSB_ULPI_STP
 Wire Wire Line
-	2350 18700 2750 18700
+	2550 22650 2850 22650
+Text GLabel 5100 22850 2    50   Output ~ 0
+TUSB_ULPI_NXT
 Wire Wire Line
-	2750 18800 2350 18800
+	5100 22850 4850 22850
+Text GLabel 5100 19700 2    50   Output ~ 0
+TUSB_PCLK
 Wire Wire Line
-	2350 18900 2750 18900
+	5100 19700 4950 19700
+Text GLabel 5100 19800 2    50   Output ~ 0
+TUSB_RX_VALID
+Text GLabel 5100 19900 2    50   Output ~ 0
+TUSB_RX_K0
+Text GLabel 5100 20000 2    50   Output ~ 0
+TUSB_RX_K1
 Wire Wire Line
-	2750 19000 2350 19000
+	5100 19800 4950 19800
 Wire Wire Line
-	2350 19100 2750 19100
+	4950 19900 5100 19900
 Wire Wire Line
-	2750 19200 2350 19200
-Text GLabel 2350 19300 0    50   Input ~ 0
-TUSB_RX_POLARITY
+	5100 20000 4950 20000
+Text GLabel 5100 18100 2    50   Output ~ 0
+TUSB_PWRPRESENT
 Wire Wire Line
-	2350 19300 2750 19300
+	4950 18100 5100 18100
+$Comp
+L Device:R_Small R?
+U 1 1 61661516
+P 1250 18600
+F 0 "R?" V 1300 18450 50  0000 C CNN
+F 1 "DNP" V 1300 18750 50  0000 C CNN
+F 2 "" H 1250 18600 50  0001 C CNN
+F 3 "~" H 1250 18600 50  0001 C CNN
+	1    1250 18600
+	0    -1   1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61661AE3
+P 700 19800
+F 0 "#PWR?" H 700 19550 50  0001 C CNN
+F 1 "GND" H 705 19627 50  0000 C CNN
+F 2 "" H 700 19800 50  0001 C CNN
+F 3 "" H 700 19800 50  0001 C CNN
+	1    700  19800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 18600 2750 18600
+$Comp
+L Device:R_Small R?
+U 1 1 61A5CE55
+P 1550 18700
+F 0 "R?" V 1600 18550 50  0000 C CNN
+F 1 "DNP" V 1600 18850 50  0000 C CNN
+F 2 "" H 1550 18700 50  0001 C CNN
+F 3 "~" H 1550 18700 50  0001 C CNN
+	1    1550 18700
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	1650 18700 2750 18700
+$Comp
+L Device:R_Small R?
+U 1 1 620FAD7C
+P 1850 18800
+F 0 "R?" V 1900 18650 50  0000 C CNN
+F 1 "DNP" V 1900 18950 50  0000 C CNN
+F 2 "" H 1850 18800 50  0001 C CNN
+F 3 "~" H 1850 18800 50  0001 C CNN
+	1    1850 18800
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 620FB0EE
+P 1550 18900
+F 0 "R?" V 1600 18750 50  0000 C CNN
+F 1 "DNP" V 1600 19050 50  0000 C CNN
+F 2 "" H 1550 18900 50  0001 C CNN
+F 3 "~" H 1550 18900 50  0001 C CNN
+	1    1550 18900
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 620FB53C
+P 1250 19000
+F 0 "R?" V 1300 18850 50  0000 C CNN
+F 1 "DNP" V 1300 19150 50  0000 C CNN
+F 2 "" H 1250 19000 50  0001 C CNN
+F 3 "~" H 1250 19000 50  0001 C CNN
+	1    1250 19000
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	1950 18800 2750 18800
+Wire Wire Line
+	1650 18900 2750 18900
+Wire Wire Line
+	1350 19000 2750 19000
+$Comp
+L Device:R_Small R?
+U 1 1 62A61E6F
+P 1550 19100
+F 0 "R?" V 1600 18950 50  0000 C CNN
+F 1 "DNP" V 1600 19250 50  0000 C CNN
+F 2 "" H 1550 19100 50  0001 C CNN
+F 3 "~" H 1550 19100 50  0001 C CNN
+	1    1550 19100
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 62A6249B
+P 1850 19200
+F 0 "R?" V 1900 19050 50  0000 C CNN
+F 1 "DNP" V 1900 19350 50  0000 C CNN
+F 2 "" H 1850 19200 50  0001 C CNN
+F 3 "~" H 1850 19200 50  0001 C CNN
+	1    1850 19200
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 62A62812
+P 1550 19300
+F 0 "R?" V 1600 19150 50  0000 C CNN
+F 1 "DNP" V 1600 19450 50  0000 C CNN
+F 2 "" H 1550 19300 50  0001 C CNN
+F 3 "~" H 1550 19300 50  0001 C CNN
+	1    1550 19300
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 62BB6B19
+P 1250 19400
+F 0 "R?" V 1300 19250 50  0000 C CNN
+F 1 "DNP" V 1300 19550 50  0000 C CNN
+F 2 "" H 1250 19400 50  0001 C CNN
+F 3 "~" H 1250 19400 50  0001 C CNN
+	1    1250 19400
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 62BBB42A
+P 1550 19500
+F 0 "R?" V 1600 19350 50  0000 C CNN
+F 1 "DNP" V 1600 19650 50  0000 C CNN
+F 2 "" H 1550 19500 50  0001 C CNN
+F 3 "~" H 1550 19500 50  0001 C CNN
+	1    1550 19500
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 62BBB74D
+P 1850 19600
+F 0 "R?" V 1900 19450 50  0000 C CNN
+F 1 "DNP" V 1900 19750 50  0000 C CNN
+F 2 "" H 1850 19600 50  0001 C CNN
+F 3 "~" H 1850 19600 50  0001 C CNN
+	1    1850 19600
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	1650 19100 2750 19100
+Wire Wire Line
+	1950 19200 2750 19200
+Wire Wire Line
+	1650 19300 2750 19300
+Wire Wire Line
+	1350 19400 2750 19400
+Wire Wire Line
+	2750 19500 1650 19500
+Wire Wire Line
+	1950 19600 2750 19600
+$Comp
+L power:+1V8 #PWR?
+U 1 1 63695D43
+P 900 18500
+F 0 "#PWR?" H 900 18350 50  0001 C CNN
+F 1 "+1V8" H 915 18673 50  0000 C CNN
+F 2 "" H 900 18500 50  0001 C CNN
+F 3 "" H 900 18500 50  0001 C CNN
+	1    900  18500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 18600 900  18600
+Wire Wire Line
+	900  18600 900  18500
+Connection ~ 900  18600
+Wire Wire Line
+	1750 18800 900  18800
+Wire Wire Line
+	900  18600 900  18800
+Wire Wire Line
+	900  19100 900  19000
+Wire Wire Line
+	900  19100 1450 19100
+Connection ~ 900  18800
+Wire Wire Line
+	900  18900 1450 18900
+Connection ~ 900  18900
+Wire Wire Line
+	900  18900 900  18800
+Wire Wire Line
+	900  19000 1150 19000
+Connection ~ 900  19000
+Wire Wire Line
+	900  19000 900  18900
+Wire Wire Line
+	900  19200 900  19100
+Wire Wire Line
+	900  19200 1750 19200
+Connection ~ 900  19100
+Wire Wire Line
+	1450 19300 900  19300
+Wire Wire Line
+	900  19300 900  19200
+Connection ~ 900  19200
+Wire Wire Line
+	1150 19400 900  19400
+Wire Wire Line
+	900  19400 900  19300
+Connection ~ 900  19300
+Wire Wire Line
+	1450 18700 700  18700
+Wire Wire Line
+	700  18700 700  19500
+Wire Wire Line
+	1450 19500 700  19500
+Connection ~ 700  19500
+Wire Wire Line
+	700  19500 700  19800
+Wire Wire Line
+	1750 19600 900  19600
+Wire Wire Line
+	900  19600 900  19400
+Connection ~ 900  19400
+$Comp
+L power:+1V8 #PWR?
+U 1 1 64F5EDE6
+P 1900 900
+F 0 "#PWR?" H 1900 750 50  0001 C CNN
+F 1 "+1V8" H 1915 1073 50  0000 C CNN
+F 2 "" H 1900 900 50  0001 C CNN
+F 3 "" H 1900 900 50  0001 C CNN
+	1    1900 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 900  1900 1050
+Wire Wire Line
+	1900 1050 2000 1050
+Wire Wire Line
+	2500 1050 2500 1300
+Connection ~ 1900 1050
+Wire Wire Line
+	1900 1050 1900 1300
+Wire Wire Line
+	2400 1300 2400 1050
+Connection ~ 2400 1050
+Wire Wire Line
+	2400 1050 2500 1050
+Wire Wire Line
+	2300 1050 2300 1300
+Connection ~ 2300 1050
+Wire Wire Line
+	2300 1050 2400 1050
+Wire Wire Line
+	2200 1300 2200 1050
+Connection ~ 2200 1050
+Wire Wire Line
+	2200 1050 2300 1050
+Wire Wire Line
+	2100 1050 2100 1300
+Connection ~ 2100 1050
+Wire Wire Line
+	2100 1050 2200 1050
+Wire Wire Line
+	2000 1300 2000 1050
+Connection ~ 2000 1050
+Wire Wire Line
+	2000 1050 2100 1050
+Text GLabel 2450 17900 0    50   Input ~ 0
+TUSB_TX_DETRX_LPBK
+Wire Wire Line
+	2750 17900 2450 17900
+Text GLabel 5500 5100 2    50   Input ~ 0
+TUSB_RX_STAT0
+Text GLabel 5500 5000 2    50   Input ~ 0
+TUSB_RX_STAT1
+Text GLabel 5500 4900 2    50   Input ~ 0
+TUSB_RX_STAT2
+Text GLabel 1400 5200 0    50   Input ~ 0
+TUSB_PWRPRESENT
+Text GLabel 1400 5300 0    50   Output ~ 0
+TUSB_PHYRESETN
+Text GLabel 1400 5700 0    50   Output ~ 0
+TUSB_TX_ELECIDLE
+Text GLabel 1400 5800 0    50   BiDi ~ 0
+TUSB_RX_ELECIDLE
+Text GLabel 1400 5500 0    50   Output ~ 0
+TUSB_PDOWN0
+Text GLabel 1400 5600 0    50   Output ~ 0
+TUSB_PDOWN1
+Text GLabel 1400 5900 0    50   BiDi ~ 0
+TUSB_PHY_STATUS
+Text GLabel 1400 5400 0    50   Output ~ 0
+TUSB_TX_DETRX_LPBK
+Text GLabel 1400 6000 0    50   Input ~ 0
+TUSB_ULPI_DIR
+Text GLabel 1400 4600 0    50   Input ~ 0
+TUSB_ULPI_CLK
+Text GLabel 1400 6100 0    50   Input ~ 0
+TUSB_ULPI_NXT
+Text GLabel 1400 6200 0    50   Output ~ 0
+TUSB_ULPI_STP
+Wire Wire Line
+	1400 5900 1500 5900
+Wire Wire Line
+	1500 6000 1400 6000
+Wire Wire Line
+	1400 6100 1500 6100
+Wire Wire Line
+	1500 6200 1400 6200
+Wire Wire Line
+	1500 5200 1400 5200
+Wire Wire Line
+	1400 5300 1500 5300
+Wire Wire Line
+	1500 5400 1400 5400
+Wire Wire Line
+	1400 5500 1500 5500
+Wire Wire Line
+	1500 5600 1400 5600
+Wire Wire Line
+	1400 5700 1500 5700
+Wire Wire Line
+	1500 5800 1400 5800
+Text GLabel 5500 4600 2    50   Input ~ 0
+TUSB_PCLK
+Text GLabel 5500 5200 2    50   Input ~ 0
+TUSB_RX_VALID
+Text GLabel 5500 5300 2    50   Input ~ 0
+TUSB_RX_K0
+Text GLabel 5500 5400 2    50   Input ~ 0
+TUSB_RX_K1
+Text GLabel 5500 4400 2    50   Output ~ 0
+TUSB_TXCLK
+Text GLabel 5500 2200 2    50   Output ~ 0
+TUSB_TX_DATAK0
+Text GLabel 5500 2300 2    50   Output ~ 0
+TUSB_TX_DATAK1
+Wire Wire Line
+	12650 5300 12800 5300
+Wire Wire Line
+	12800 5400 12650 5400
+Text GLabel 5500 2400 2    50   BiDi ~ 0
+TUSB_TX_D15
+Wire Wire Line
+	16950 5300 16800 5300
+Wire Wire Line
+	16800 5400 16950 5400
+Wire Wire Line
+	16950 5200 16800 5200
+Wire Wire Line
+	1400 4800 1500 4800
+Wire Wire Line
+	1400 4900 1500 4900
+Wire Wire Line
+	1500 5000 1400 5000
+Wire Wire Line
+	1400 5100 1500 5100
+$Comp
+L Device:C_Small C?
+U 1 1 6935A4E2
+P 7300 18300
+F 0 "C?" H 7392 18346 50  0000 L CNN
+F 1 "0.1uF" H 7392 18255 50  0000 L CNN
+F 2 "" H 7300 18300 50  0001 C CNN
+F 3 "~" H 7300 18300 50  0001 C CNN
+	1    7300 18300
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	7400 18300 8000 18300
+Wire Wire Line
+	7200 18300 7150 18300
+$Comp
+L Device:C_Small C?
+U 1 1 69DE8155
+P 7500 18400
+F 0 "C?" H 7592 18446 50  0000 L CNN
+F 1 "0.1uF" H 7592 18355 50  0000 L CNN
+F 2 "" H 7500 18400 50  0001 C CNN
+F 3 "~" H 7500 18400 50  0001 C CNN
+	1    7500 18400
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	7600 18400 8000 18400
+Wire Wire Line
+	7400 18400 7150 18400
+Wire Wire Line
+	11000 22400 11000 22600
+Text GLabel 11250 22500 2    50   UnSpc ~ 0
+TUSB_VSSOSC
+Wire Wire Line
+	11250 22500 10750 22500
+Text GLabel 8000 19750 2    50   UnSpc ~ 0
+TUSB_VSSOSC
+Wire Wire Line
+	7350 19750 8000 19750
+Wire Wire Line
+	7350 19650 7350 19750
+$Comp
+L Device:R_Small R?
+U 1 1 6A406698
+P 7800 19950
+F 0 "R?" V 7850 19800 50  0000 C CNN
+F 1 "DNP" V 7850 20150 50  0000 C CNN
+F 2 "" H 7800 19950 50  0001 C CNN
+F 3 "~" H 7800 19950 50  0001 C CNN
+	1    7800 19950
+	0    1    -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6A40B60D
+P 8150 19950
+F 0 "#PWR?" H 8150 19700 50  0001 C CNN
+F 1 "GND" H 8155 19777 50  0000 C CNN
+F 2 "" H 8150 19950 50  0001 C CNN
+F 3 "" H 8150 19950 50  0001 C CNN
+	1    8150 19950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 19950 7900 19950
+Wire Wire Line
+	7700 19950 7350 19950
+Wire Wire Line
+	7350 19950 7350 19750
+Connection ~ 7350 19750
+Wire Wire Line
+	1500 4600 1400 4600
+NoConn ~ 5500 4700
+NoConn ~ 5500 4500
+NoConn ~ 1500 4700
+NoConn ~ 16800 4700
+NoConn ~ 12800 4700
+Text Notes 18350 11750 0    50   ~ 0
+TODO: PCIe clocking
+Text GLabel 7150 3200 0    50   Output ~ 0
+FCS_B
+Text GLabel 7150 2700 0    50   Output ~ 0
+CCLK
+Wire Wire Line
+	7300 3200 7150 3200
+Text GLabel 1400 5000 0    50   Output ~ 0
+TUSB_ENAB
+Text GLabel 1400 5100 0    50   Output ~ 0
+TUSB_RESETN
+$Comp
+L power:+1V8 #PWR?
+U 1 1 6FA1988E
+P 4600 900
+F 0 "#PWR?" H 4600 750 50  0001 C CNN
+F 1 "+1V8" H 4615 1073 50  0000 C CNN
+F 2 "" H 4600 900 50  0001 C CNN
+F 3 "" H 4600 900 50  0001 C CNN
+	1    4600 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 900  4600 1050
+Wire Wire Line
+	4600 1050 4700 1050
+Connection ~ 4600 1050
+Wire Wire Line
+	4600 1050 4600 1300
+Wire Wire Line
+	5100 1300 5100 1050
+Wire Wire Line
+	5000 1050 5000 1300
+Connection ~ 5000 1050
+Wire Wire Line
+	5000 1050 5100 1050
+Wire Wire Line
+	4900 1300 4900 1050
+Connection ~ 4900 1050
+Wire Wire Line
+	4900 1050 5000 1050
+Wire Wire Line
+	4800 1050 4800 1300
+Connection ~ 4800 1050
+Wire Wire Line
+	4800 1050 4900 1050
+Wire Wire Line
+	4700 1300 4700 1050
+Connection ~ 4700 1050
+Wire Wire Line
+	4700 1050 4800 1050
 $EndSCHEMATC
