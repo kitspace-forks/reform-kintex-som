@@ -4407,7 +4407,7 @@ Wire Wire Line
 	10600 9600 10600 9550
 Connection ~ 10350 9600
 Wire Wire Line
-	10350 9600 10350 9450
+	10350 9600 10350 9550
 Text GLabel 13700 9250 2    50   Input ~ 0
 VTTREF
 $Comp
@@ -4452,7 +4452,7 @@ Wire Wire Line
 	13400 8800 13400 8950
 Connection ~ 13400 9600
 Wire Wire Line
-	13400 9600 13400 9450
+	13400 9600 13400 9550
 Wire Wire Line
 	12850 9250 13400 9250
 Wire Wire Line
@@ -7177,4 +7177,217 @@ Text Label 7650 18400 0    50   ~ 0
 USB1TXP
 Text GLabel 6050 10500 2    50   Input ~ 0
 RAM_D0
+Text Notes 10300 13000 0    50   ~ 0
+The CK/CK# signals must arrive at each memory\n device after the DQS/DQS# signals. The\n recommended value for additional propagation\n delay on CK/CK# traces relative to DQS/DQS# at\n each memory device is documented in the Design Guidelines section of UG586.
+Text GLabel 9100 14800 0    50   Input ~ 0
+RAM_RAS#
+Text GLabel 9100 14900 0    50   Input ~ 0
+RAM_CAS#
+Text GLabel 9100 15000 0    50   Input ~ 0
+RAM_WE#
+Text GLabel 9100 15400 0    50   Input ~ 0
+RAM_BA0
+Text GLabel 9100 15500 0    50   Input ~ 0
+RAM_BA1
+Text GLabel 9100 15600 0    50   Input ~ 0
+RAM_BA2
+Text GLabel 9100 15100 0    50   Input ~ 0
+RAM_CS#
+Text GLabel 9100 15250 0    50   Input ~ 0
+RAM_CKE
+$Comp
+L Device:R_Small R84
+U 1 1 62E50D67
+P 9950 9550
+F 0 "R84" V 9900 9400 50  0000 C CNN
+F 1 "240 1%" V 9850 9600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 9950 9550 50  0001 C CNN
+F 3 "~" H 9950 9550 50  0001 C CNN
+	1    9950 9550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9850 9550 9800 9550
+Wire Wire Line
+	10050 9550 10350 9550
+Connection ~ 10350 9550
+Wire Wire Line
+	10350 9550 10350 9450
+$Comp
+L Device:R_Small R85
+U 1 1 6317E834
+P 13000 9550
+F 0 "R85" V 12950 9400 50  0000 C CNN
+F 1 "240 1%" V 12900 9600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 13000 9550 50  0001 C CNN
+F 3 "~" H 13000 9550 50  0001 C CNN
+	1    13000 9550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	12900 9550 12850 9550
+Wire Wire Line
+	13100 9550 13400 9550
+Connection ~ 13400 9550
+Wire Wire Line
+	13400 9550 13400 9450
+$Comp
+L Device:R_Small R87
+U 1 1 634AF5EB
+P 9200 14800
+F 0 "R87" V 9004 14800 50  0000 C CNN
+F 1 "40" V 9095 14800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 9200 14800 50  0001 C CNN
+F 3 "~" H 9200 14800 50  0001 C CNN
+	1    9200 14800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R88
+U 1 1 634AF8A5
+P 9400 14900
+F 0 "R88" V 9204 14900 50  0000 C CNN
+F 1 "40" V 9295 14900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 9400 14900 50  0001 C CNN
+F 3 "~" H 9400 14900 50  0001 C CNN
+	1    9400 14900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R89
+U 1 1 634AFAD6
+P 9200 15000
+F 0 "R89" V 9004 15000 50  0000 C CNN
+F 1 "40" V 9095 15000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 9200 15000 50  0001 C CNN
+F 3 "~" H 9200 15000 50  0001 C CNN
+	1    9200 15000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R90
+U 1 1 634AFCD4
+P 9400 15100
+F 0 "R90" V 9204 15100 50  0000 C CNN
+F 1 "40" V 9295 15100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 9400 15100 50  0001 C CNN
+F 3 "~" H 9400 15100 50  0001 C CNN
+	1    9400 15100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R91
+U 1 1 634AFFD1
+P 9200 15250
+F 0 "R91" V 9004 15250 50  0000 C CNN
+F 1 "40" V 9095 15250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 9200 15250 50  0001 C CNN
+F 3 "~" H 9200 15250 50  0001 C CNN
+	1    9200 15250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R92
+U 1 1 634B044E
+P 9400 15400
+F 0 "R92" V 9204 15400 50  0000 C CNN
+F 1 "40" V 9295 15400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 9400 15400 50  0001 C CNN
+F 3 "~" H 9400 15400 50  0001 C CNN
+	1    9400 15400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R93
+U 1 1 634B059A
+P 9200 15500
+F 0 "R93" V 9004 15500 50  0000 C CNN
+F 1 "40" V 9095 15500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 9200 15500 50  0001 C CNN
+F 3 "~" H 9200 15500 50  0001 C CNN
+	1    9200 15500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R94
+U 1 1 634B06E1
+P 9400 15600
+F 0 "R94" V 9204 15600 50  0000 C CNN
+F 1 "40" V 9295 15600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 9400 15600 50  0001 C CNN
+F 3 "~" H 9400 15600 50  0001 C CNN
+	1    9400 15600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9300 14900 9100 14900
+Wire Wire Line
+	9100 15100 9300 15100
+Wire Wire Line
+	9100 15400 9300 15400
+Wire Wire Line
+	9100 15600 9300 15600
+Wire Wire Line
+	9300 14800 9650 14800
+Wire Wire Line
+	9650 14800 9650 14550
+Connection ~ 9650 14550
+Wire Wire Line
+	9500 14900 9650 14900
+Wire Wire Line
+	9650 14900 9650 14800
+Connection ~ 9650 14800
+Wire Wire Line
+	9300 15000 9650 15000
+Wire Wire Line
+	9650 15000 9650 14900
+Connection ~ 9650 14900
+Wire Wire Line
+	9500 15100 9650 15100
+Wire Wire Line
+	9650 15100 9650 15000
+Connection ~ 9650 15000
+Wire Wire Line
+	9300 15250 9650 15250
+Wire Wire Line
+	9650 15250 9650 15100
+Connection ~ 9650 15100
+Wire Wire Line
+	9500 15400 9650 15400
+Wire Wire Line
+	9650 15400 9650 15250
+Connection ~ 9650 15250
+Wire Wire Line
+	9300 15500 9650 15500
+Wire Wire Line
+	9650 15500 9650 15400
+Connection ~ 9650 15400
+Wire Wire Line
+	9500 15600 9650 15600
+Wire Wire Line
+	9650 15600 9650 15500
+Connection ~ 9650 15500
+$Comp
+L Device:R_Small R86
+U 1 1 649C1968
+P 10800 13650
+F 0 "R86" V 10604 13650 50  0000 C CNN
+F 1 "80.6" V 10695 13650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 10800 13650 50  0001 C CNN
+F 3 "~" H 10800 13650 50  0001 C CNN
+	1    10800 13650
+	0    1    1    0   
+$EndComp
+Text GLabel 10600 13650 0    50   Input ~ 0
+RAM_CK+
+Text GLabel 10600 13800 0    50   Input ~ 0
+RAM_CK-
+Wire Wire Line
+	10600 13650 10700 13650
+Wire Wire Line
+	10600 13800 11000 13800
+Wire Wire Line
+	11000 13800 11000 13650
+Wire Wire Line
+	11000 13650 10900 13650
 $EndSCHEMATC
