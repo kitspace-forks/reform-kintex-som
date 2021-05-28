@@ -2386,59 +2386,55 @@ Text GLabel 12800 4800 0    50   Output ~ 0
 DISP1_HS
 Text GLabel 12800 5000 0    50   Output ~ 0
 DISP1_DE
-Text GLabel 16800 4500 2    50   Input ~ 0
-DISP2_RGB0
-Text GLabel 16800 4400 2    50   Input ~ 0
-DISP2_RGB1
-Text GLabel 16800 4300 2    50   Input ~ 0
-DISP2_RGB2
-Text GLabel 16800 4200 2    50   Input ~ 0
-DISP2_RGB3
-Text GLabel 16800 4100 2    50   Input ~ 0
-DISP2_RGB4
-Text GLabel 16800 4000 2    50   Input ~ 0
-DISP2_RGB5
-Text GLabel 16800 3900 2    50   Input ~ 0
-DISP2_RGB6
-Text GLabel 16800 3800 2    50   Input ~ 0
-DISP2_RGB7
-Text GLabel 16800 3700 2    50   Input ~ 0
-DISP2_RGB8
-Text GLabel 16800 3600 2    50   Input ~ 0
-DISP2_RGB9
-Text GLabel 16800 3500 2    50   Input ~ 0
-DISP2_RGB10
-Text GLabel 16800 3400 2    50   Input ~ 0
-DISP2_RGB11
-Text GLabel 16800 3300 2    50   Input ~ 0
-DISP2_RGB12
-Text GLabel 16800 3200 2    50   Input ~ 0
-DISP2_RGB13
-Text GLabel 16800 3100 2    50   Input ~ 0
-DISP2_RGB14
-Text GLabel 16800 3000 2    50   Input ~ 0
-DISP2_RGB15
-Text GLabel 16800 2900 2    50   Input ~ 0
-DISP2_RGB16
-Text GLabel 16800 2800 2    50   Input ~ 0
-DISP2_RGB17
-Text GLabel 16800 2700 2    50   Input ~ 0
-DISP2_RGB18
-Text GLabel 16800 2600 2    50   Input ~ 0
-DISP2_RGB19
 Text GLabel 16800 2500 2    50   Input ~ 0
-DISP2_RGB20
+DISP2_RGB0
 Text GLabel 16800 2400 2    50   Input ~ 0
-DISP2_RGB21
-Text GLabel 16800 2300 2    50   Input ~ 0
-DISP2_RGB22
+DISP2_RGB1
+Text GLabel 16800 3300 2    50   Input ~ 0
+DISP2_RGB2
+Text GLabel 16800 2900 2    50   Input ~ 0
+DISP2_RGB3
 Text GLabel 16800 2200 2    50   Input ~ 0
+DISP2_RGB4
+Text GLabel 16800 2300 2    50   Input ~ 0
+DISP2_RGB5
+Text GLabel 16800 3400 2    50   Input ~ 0
+DISP2_RGB6
+Text GLabel 16800 2700 2    50   Input ~ 0
+DISP2_RGB7
+Text GLabel 16800 2800 2    50   Input ~ 0
+DISP2_RGB8
+Text GLabel 16800 3200 2    50   Input ~ 0
+DISP2_RGB10
+Text GLabel 16800 3000 2    50   Input ~ 0
+DISP2_RGB11
+Text GLabel 16800 4500 2    50   Input ~ 0
+DISP2_RGB12
+Text GLabel 16800 3700 2    50   Input ~ 0
+DISP2_RGB13
+Text GLabel 16800 4900 2    50   Input ~ 0
+DISP2_RGB14
+Text GLabel 16800 3600 2    50   Input ~ 0
+DISP2_RGB15
+Text GLabel 16800 4000 2    50   Input ~ 0
+DISP2_RGB16
+Text GLabel 16800 4200 2    50   Input ~ 0
+DISP2_RGB17
+Text GLabel 16800 4300 2    50   Input ~ 0
+DISP2_RGB19
+Text GLabel 16800 3900 2    50   Input ~ 0
+DISP2_RGB20
+Text GLabel 16800 4800 2    50   Input ~ 0
+DISP2_RGB21
+Text GLabel 16800 3100 2    50   Input ~ 0
+DISP2_RGB22
+Text GLabel 16800 5000 2    50   Input ~ 0
 DISP2_RGB23
-Text GLabel 16800 4900 2    50   Output ~ 0
+Text GLabel 16800 4400 2    50   Output ~ 0
 DISP2_VS
-Text GLabel 16800 4800 2    50   Output ~ 0
+Text GLabel 16800 4100 2    50   Output ~ 0
 DISP2_HS
-Text GLabel 16800 5000 2    50   Output ~ 0
+Text GLabel 16800 3500 2    50   Output ~ 0
 DISP2_DE
 Text GLabel 17750 11650 2    50   Input ~ 0
 PCIE1_CLK_N
@@ -7390,4 +7386,9 @@ Wire Wire Line
 	11000 13800 11000 13650
 Wire Wire Line
 	11000 13650 10900 13650
+NoConn ~ 16800 5100
+Text GLabel 16800 2600 2    50   Input ~ 0
+DISP2_RGB9
+Text GLabel 16800 3800 2    50   Input ~ 0
+DISP2_RGB18
 $EndSCHEMATC
