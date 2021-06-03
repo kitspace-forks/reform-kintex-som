@@ -2048,17 +2048,17 @@ Wire Wire Line
 	17450 16650 19200 16650
 Text Notes 14800 14850 0    50   ~ 0
 TODO: bank 14 config pins
-Text GLabel 11300 2700 2    50   Output ~ 0
+Text GLabel 12800 4700 0    50   Output ~ 0
 SD2_CLK
-Text GLabel 11300 2600 2    50   Output ~ 0
+Text GLabel 12800 6700 0    50   Output ~ 0
 SD2_CMD
-Text GLabel 11300 2500 2    50   BiDi ~ 0
+Text GLabel 12800 6600 0    50   BiDi ~ 0
 SD2_DATA3
-Text GLabel 11300 2400 2    50   BiDi ~ 0
+Text GLabel 12800 6500 0    50   BiDi ~ 0
 SD2_DATA2
-Text GLabel 11300 2300 2    50   BiDi ~ 0
+Text GLabel 12800 6400 0    50   BiDi ~ 0
 SD2_DATA1
-Text GLabel 11300 2200 2    50   BiDi ~ 0
+Text GLabel 12800 6300 0    50   BiDi ~ 0
 SD2_DATA0
 Text GLabel 11300 6900 2    50   Output ~ 0
 DAC_MCLK
@@ -2520,7 +2520,7 @@ Wire Wire Line
 	18650 9850 17950 9850
 Wire Wire Line
 	18250 9950 18650 9950
-Text GLabel 11300 2900 2    50   Input ~ 0
+Text GLabel 11300 2200 2    50   Input ~ 0
 UART2_RX
 Text GLabel 11300 3000 2    50   Output ~ 0
 UART2_TX
@@ -2528,7 +2528,7 @@ Text GLabel 11300 3100 2    50   Input ~ 0
 UART1_RX
 Text GLabel 11300 3200 2    50   Output ~ 0
 UART1_TX
-Text GLabel 11300 2800 2    50   Input ~ 0
+Text GLabel 12800 6900 0    50   Input ~ 0
 SD2_CD
 Text GLabel 11300 3400 2    50   Input ~ 0
 UART3_RX
@@ -5046,43 +5046,43 @@ Wire Wire Line
 	38400 11800 38250 11800
 Wire Wire Line
 	38250 11900 38400 11900
-Text GLabel 11300 3700 2    50   Output ~ 0
-ETH_REF_CLK
-Text GLabel 11300 3800 2    50   BiDi ~ 0
-ETH_MDIO
-Text GLabel 11300 3900 2    50   Output ~ 0
-ETH_MDC
-Text GLabel 11300 4000 2    50   Input ~ 0
-ETH_INT_N
-Text GLabel 11300 4900 2    50   Input ~ 0
-ETH_RX_D0
-Text GLabel 11300 5000 2    50   Input ~ 0
-ETH_RX_D1
-Text GLabel 11300 5100 2    50   Input ~ 0
-ETH_RX_D2
-Text GLabel 11300 5200 2    50   Input ~ 0
-ETH_RX_D3
-Text GLabel 11300 4800 2    50   Output ~ 0
-ETH_RX_DV
-Text GLabel 11300 4300 2    50   Output ~ 0
-ETH_TX_D0
 Text GLabel 11300 4400 2    50   Output ~ 0
-ETH_TX_D1
+ETH_REF_CLK
+Text GLabel 11300 4000 2    50   BiDi ~ 0
+ETH_MDIO
 Text GLabel 11300 4500 2    50   Output ~ 0
+ETH_MDC
+Text GLabel 11300 4100 2    50   Input ~ 0
+ETH_INT_N
+Text GLabel 11300 3800 2    50   Input ~ 0
+ETH_RX_D0
+Text GLabel 11300 3900 2    50   Input ~ 0
+ETH_RX_D1
+Text GLabel 11300 5300 2    50   Input ~ 0
+ETH_RX_D2
+Text GLabel 11300 5100 2    50   Input ~ 0
+ETH_RX_D3
+Text GLabel 11300 3700 2    50   Output ~ 0
+ETH_RX_DV
+Text GLabel 11300 4900 2    50   Output ~ 0
+ETH_TX_D0
+Text GLabel 11300 4800 2    50   Output ~ 0
+ETH_TX_D1
+Text GLabel 11300 5200 2    50   Output ~ 0
 ETH_TX_D2
-Text GLabel 11300 4600 2    50   Output ~ 0
+Text GLabel 11300 4300 2    50   Output ~ 0
 ETH_TX_D3
-Text GLabel 11300 4700 2    50   Output ~ 0
+Text GLabel 11300 4600 2    50   Output ~ 0
 ETH_TX_CLK
-Text GLabel 11300 4200 2    50   Output ~ 0
+Text GLabel 11300 5000 2    50   Output ~ 0
 ETH_TX_EN
-Text GLabel 11300 4100 2    50   Output ~ 0
+Text GLabel 11300 4200 2    50   Output ~ 0
 ETH_RST_N
 Text GLabel 35450 11600 0    50   Input ~ 0
 ETH_RX_CLK
 Wire Wire Line
 	35450 11600 35650 11600
-Text GLabel 11300 5300 2    50   Output ~ 0
+Text GLabel 11300 4700 2    50   Output ~ 0
 ETH_RX_CLK
 Text Notes 11350 5800 0    50   ~ 0
 TODO: floorplan
@@ -5928,67 +5928,63 @@ Wire Wire Line
 	5100 21500 4950 21500
 Wire Wire Line
 	5100 21700 4950 21700
-Text GLabel 5500 5200 2    50   BiDi ~ 0
+Text GLabel 5500 3200 2    50   BiDi ~ 0
 TUSB_TX_D0
-Text GLabel 5500 5300 2    50   BiDi ~ 0
+Text GLabel 5500 2500 2    50   BiDi ~ 0
 TUSB_TX_D1
-Text GLabel 5500 5400 2    50   BiDi ~ 0
+Text GLabel 5500 5800 2    50   BiDi ~ 0
 TUSB_TX_D2
-Text GLabel 5500 5500 2    50   BiDi ~ 0
+Text GLabel 5500 6300 2    50   BiDi ~ 0
 TUSB_TX_D3
 Text GLabel 5500 5600 2    50   BiDi ~ 0
 TUSB_TX_D4
-Text GLabel 5500 5700 2    50   BiDi ~ 0
-TUSB_TX_D5
-Text GLabel 5500 5800 2    50   BiDi ~ 0
+Text GLabel 5500 4900 2    50   BiDi ~ 0
 TUSB_TX_D6
-Text GLabel 5500 5900 2    50   BiDi ~ 0
-TUSB_TX_D7
-Text GLabel 5500 2600 2    50   BiDi ~ 0
-TUSB_RX_D0
-Text GLabel 5500 2700 2    50   BiDi ~ 0
-TUSB_RX_D1
-Text GLabel 5500 2800 2    50   BiDi ~ 0
-TUSB_RX_D2
-Text GLabel 5500 2900 2    50   BiDi ~ 0
-TUSB_RX_D3
-Text GLabel 5500 3000 2    50   BiDi ~ 0
-TUSB_RX_D4
-Text GLabel 5500 3100 2    50   BiDi ~ 0
-TUSB_RX_D5
-Text GLabel 5500 3200 2    50   BiDi ~ 0
-TUSB_RX_D6
 Text GLabel 5500 3300 2    50   BiDi ~ 0
+TUSB_TX_D7
+Text GLabel 5500 5300 2    50   BiDi ~ 0
+TUSB_RX_D0
+Text GLabel 5500 2600 2    50   BiDi ~ 0
+TUSB_RX_D1
+Text GLabel 5500 3100 2    50   BiDi ~ 0
+TUSB_RX_D2
+Text GLabel 5500 5500 2    50   BiDi ~ 0
+TUSB_RX_D4
+Text GLabel 5500 5100 2    50   BiDi ~ 0
+TUSB_RX_D5
+Text GLabel 5500 3400 2    50   BiDi ~ 0
+TUSB_RX_D6
+Text GLabel 5500 6900 2    50   BiDi ~ 0
 TUSB_RX_D7
-Text GLabel 5500 4100 2    50   BiDi ~ 0
+Text GLabel 1400 6000 0    50   BiDi ~ 0
 TUSB_RX_D15
-Text GLabel 5500 6000 2    50   BiDi ~ 0
+Text GLabel 5500 4800 2    50   BiDi ~ 0
 TUSB_TX_D8
-Text GLabel 5500 6100 2    50   BiDi ~ 0
+Text GLabel 5500 2800 2    50   BiDi ~ 0
 TUSB_TX_D9
-Text GLabel 5500 6200 2    50   BiDi ~ 0
+Text GLabel 5500 3000 2    50   BiDi ~ 0
 TUSB_TX_D10
-Text GLabel 5500 6300 2    50   BiDi ~ 0
+Text GLabel 5500 5700 2    50   BiDi ~ 0
 TUSB_TX_D11
-Text GLabel 5500 6400 2    50   BiDi ~ 0
+Text GLabel 5500 3500 2    50   BiDi ~ 0
 TUSB_TX_D12
 Text GLabel 5500 6500 2    50   BiDi ~ 0
 TUSB_TX_D13
-Text GLabel 5500 6600 2    50   BiDi ~ 0
+Text GLabel 5500 4100 2    50   BiDi ~ 0
 TUSB_TX_D14
-Text GLabel 5500 3400 2    50   BiDi ~ 0
+Text GLabel 5500 6400 2    50   BiDi ~ 0
 TUSB_RX_D8
-Text GLabel 5500 3500 2    50   BiDi ~ 0
+Text GLabel 5500 5900 2    50   BiDi ~ 0
 TUSB_RX_D9
-Text GLabel 5500 3600 2    50   BiDi ~ 0
-TUSB_RX_D10
 Text GLabel 5500 3700 2    50   BiDi ~ 0
+TUSB_RX_D10
+Text GLabel 5500 2200 2    50   BiDi ~ 0
 TUSB_RX_D11
-Text GLabel 5500 3800 2    50   BiDi ~ 0
+Text GLabel 1400 6300 0    50   BiDi ~ 0
 TUSB_RX_D12
-Text GLabel 5500 3900 2    50   BiDi ~ 0
+Text GLabel 1400 6700 0    50   BiDi ~ 0
 TUSB_RX_D13
-Text GLabel 5500 4000 2    50   BiDi ~ 0
+Text GLabel 1400 6500 0    50   BiDi ~ 0
 TUSB_RX_D14
 Text GLabel 2550 22850 0    50   BiDi ~ 0
 TUSB_ULPI_D0
@@ -6026,35 +6022,33 @@ Text GLabel 5100 22650 2    50   Output ~ 0
 TUSB_ULPI_DIR
 Wire Wire Line
 	4850 22650 5100 22650
-Text GLabel 1400 6300 0    50   BiDi ~ 0
+Text GLabel 1400 5700 0    50   BiDi ~ 0
 TUSB_ULPI_D0
 Wire Wire Line
 	1400 6300 1500 6300
-Text GLabel 1400 6500 0    50   BiDi ~ 0
+Text GLabel 1400 5600 0    50   BiDi ~ 0
 TUSB_ULPI_D2
 Wire Wire Line
 	1400 6500 1500 6500
-Text GLabel 1400 6700 0    50   BiDi ~ 0
+Text GLabel 1400 5000 0    50   BiDi ~ 0
 TUSB_ULPI_D4
 Wire Wire Line
 	1400 6700 1500 6700
-Text GLabel 1400 6900 0    50   BiDi ~ 0
+Text GLabel 5500 6700 2    50   BiDi ~ 0
 TUSB_ULPI_D6
 Wire Wire Line
 	1400 6900 1500 6900
-Text GLabel 1400 6400 0    50   BiDi ~ 0
+Text GLabel 1400 5800 0    50   BiDi ~ 0
 TUSB_ULPI_D1
-Text GLabel 1400 6600 0    50   BiDi ~ 0
+Text GLabel 1400 7000 0    50   BiDi ~ 0
 TUSB_ULPI_D3
-Text GLabel 1400 6800 0    50   BiDi ~ 0
-TUSB_ULPI_D5
 Wire Wire Line
 	1400 6400 1500 6400
 Wire Wire Line
 	1400 6600 1500 6600
 Wire Wire Line
 	1400 6800 1500 6800
-Text GLabel 1400 7000 0    50   BiDi ~ 0
+Text GLabel 5500 6200 2    50   BiDi ~ 0
 TUSB_ULPI_D7
 Wire Wire Line
 	1400 7000 1500 7000
@@ -6659,35 +6653,31 @@ Text GLabel 2450 17900 0    50   Input ~ 0
 TUSB_TX_DETRX_LPBK
 Wire Wire Line
 	2750 17900 2450 17900
-Text GLabel 5500 2400 2    50   Input ~ 0
+Text GLabel 5500 3600 2    50   Input ~ 0
 TUSB_RX_STAT0
-Text GLabel 5500 2300 2    50   Input ~ 0
-TUSB_RX_STAT1
-Text GLabel 5500 2200 2    50   Input ~ 0
+Text GLabel 5500 6000 2    50   Input ~ 0
 TUSB_RX_STAT2
-Text GLabel 1400 5200 0    50   Input ~ 0
+Text GLabel 1400 6800 0    50   Input ~ 0
 TUSB_PWRPRESENT
-Text GLabel 1400 5300 0    50   Output ~ 0
-TUSB_PHYRESETN
-Text GLabel 1400 5700 0    50   Output ~ 0
+Text GLabel 5500 2900 2    50   Output ~ 0
 TUSB_TX_ELECIDLE
-Text GLabel 1400 5800 0    50   BiDi ~ 0
+Text GLabel 1400 6400 0    50   BiDi ~ 0
 TUSB_RX_ELECIDLE
-Text GLabel 1400 5500 0    50   Output ~ 0
+Text GLabel 5500 4300 2    50   Output ~ 0
 TUSB_PDOWN0
-Text GLabel 1400 5600 0    50   Output ~ 0
+Text GLabel 1400 6200 0    50   Output ~ 0
 TUSB_PDOWN1
-Text GLabel 1400 5900 0    50   BiDi ~ 0
+Text GLabel 5500 5400 2    50   BiDi ~ 0
 TUSB_PHY_STATUS
 Text GLabel 1400 5400 0    50   Output ~ 0
 TUSB_TX_DETRX_LPBK
-Text GLabel 1400 6000 0    50   Input ~ 0
+Text GLabel 1400 5300 0    50   Input ~ 0
 TUSB_ULPI_DIR
-Text GLabel 1400 4600 0    50   Input ~ 0
+Text GLabel 1400 6900 0    50   Input ~ 0
 TUSB_ULPI_CLK
-Text GLabel 1400 6100 0    50   Input ~ 0
+Text GLabel 1400 5900 0    50   Input ~ 0
 TUSB_ULPI_NXT
-Text GLabel 1400 6200 0    50   Output ~ 0
+Text GLabel 1400 5100 0    50   Output ~ 0
 TUSB_ULPI_STP
 Wire Wire Line
 	1400 5900 1500 5900
@@ -6713,19 +6703,17 @@ Wire Wire Line
 	1500 5800 1400 5800
 Text GLabel 5500 4600 2    50   Input ~ 0
 TUSB_PCLK
-Text GLabel 5500 2500 2    50   Input ~ 0
+Text GLabel 5500 2400 2    50   Input ~ 0
 TUSB_RX_VALID
-Text GLabel 5500 4300 2    50   Input ~ 0
+Text GLabel 5500 2300 2    50   Input ~ 0
 TUSB_RX_K0
-Text GLabel 5500 4200 2    50   Input ~ 0
+Text GLabel 5500 2700 2    50   Input ~ 0
 TUSB_RX_K1
 Text GLabel 5500 4400 2    50   Output ~ 0
 TUSB_TXCLK
-Text GLabel 5500 6900 2    50   Output ~ 0
-TUSB_TX_DATAK0
-Text GLabel 5500 6800 2    50   Output ~ 0
+Text GLabel 1400 5500 0    50   Output ~ 0
 TUSB_TX_DATAK1
-Text GLabel 5500 6700 2    50   BiDi ~ 0
+Text GLabel 1400 5200 0    50   BiDi ~ 0
 TUSB_TX_D15
 Wire Wire Line
 	1400 4800 1500 4800
@@ -6812,7 +6800,6 @@ NoConn ~ 5500 4700
 NoConn ~ 5500 4500
 NoConn ~ 1500 4700
 NoConn ~ 16800 4700
-NoConn ~ 12800 4700
 Text Notes 18350 11750 0    50   ~ 0
 TODO: PCIe clocking
 Text GLabel 7150 3200 0    50   Output ~ 0
@@ -6821,9 +6808,9 @@ Text GLabel 17550 16050 2    50   Output ~ 0
 CCLK
 Wire Wire Line
 	7300 3200 7150 3200
-Text GLabel 1400 5000 0    50   Output ~ 0
+Text GLabel 1400 6600 0    50   Output ~ 0
 TUSB_ENAB
-Text GLabel 1400 5100 0    50   Output ~ 0
+Text GLabel 1400 6100 0    50   Output ~ 0
 TUSB_RESETN
 $Comp
 L power:+1V8 #PWR033
@@ -7391,4 +7378,16 @@ Text GLabel 16800 2600 2    50   Input ~ 0
 DISP2_RGB9
 Text GLabel 16800 3800 2    50   Input ~ 0
 DISP2_RGB18
+Text GLabel 5500 6600 2    50   BiDi ~ 0
+TUSB_ULPI_D5
+Text GLabel 5500 4000 2    50   Output ~ 0
+TUSB_TX_DATAK0
+Text GLabel 5500 4200 2    50   Output ~ 0
+TUSB_PHYRESETN
+Text GLabel 5500 5200 2    50   BiDi ~ 0
+TUSB_TX_D5
+Text GLabel 5500 6800 2    50   BiDi ~ 0
+TUSB_RX_D3
+Text GLabel 5500 6100 2    50   Input ~ 0
+TUSB_RX_STAT1
 $EndSCHEMATC
