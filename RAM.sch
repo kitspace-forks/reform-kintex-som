@@ -11557,4 +11557,8 @@ Text Notes 39950 8450 0    50   ~ 0
 TODO: 0603
 Text Notes 39950 7500 0    50   ~ 0
 TODO: 0603
+Text Notes 16000 14650 0    50   ~ 0
+TODO: double check.\nkinda weird locations.
+Text Notes 18550 15700 0    50   ~ 0
+TODO: double check,\nreally 3v3?
 $EndSCHEMATC
