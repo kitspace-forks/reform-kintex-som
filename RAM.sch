@@ -2314,39 +2314,35 @@ Text GLabel 12800 3900 0    50   Input ~ 0
 DISP1_RGB5
 Text GLabel 12800 4100 0    50   Input ~ 0
 DISP1_RGB6
-Text GLabel 12800 4300 0    50   Input ~ 0
+Text GLabel 12800 3600 0    50   Input ~ 0
 DISP1_RGB7
-Text GLabel 12800 4200 0    50   Input ~ 0
+Text GLabel 12800 5000 0    50   Input ~ 0
 DISP1_RGB8
 Text GLabel 12800 4000 0    50   Input ~ 0
 DISP1_RGB9
-Text GLabel 12800 3600 0    50   Input ~ 0
-DISP1_RGB10
-Text GLabel 12800 5000 0    50   Input ~ 0
-DISP1_RGB11
-Text GLabel 12800 3300 0    50   Input ~ 0
-DISP1_RGB12
-Text GLabel 12800 3200 0    50   Input ~ 0
-DISP1_RGB13
 Text GLabel 12800 3100 0    50   Input ~ 0
-DISP1_RGB14
+DISP1_RGB10
+Text GLabel 12800 4300 0    50   Input ~ 0
+DISP1_RGB11
 Text GLabel 12800 3000 0    50   Input ~ 0
-DISP1_RGB15
-Text GLabel 12800 2900 0    50   Input ~ 0
-DISP1_RGB16
-Text GLabel 12800 2800 0    50   Input ~ 0
-DISP1_RGB17
-Text GLabel 12800 2700 0    50   Input ~ 0
-DISP1_RGB18
-Text GLabel 12800 2600 0    50   Input ~ 0
-DISP1_RGB19
+DISP1_RGB12
+Text GLabel 12800 4200 0    50   Input ~ 0
+DISP1_RGB13
+Text GLabel 12800 3300 0    50   Input ~ 0
+DISP1_RGB14
 Text GLabel 12800 2500 0    50   Input ~ 0
-DISP1_RGB20
+DISP1_RGB15
+Text GLabel 12800 2700 0    50   Input ~ 0
+DISP1_RGB16
 Text GLabel 12800 2400 0    50   Input ~ 0
-DISP1_RGB21
+DISP1_RGB17
+Text GLabel 12800 3200 0    50   Input ~ 0
+DISP1_RGB19
 Text GLabel 12800 2300 0    50   Input ~ 0
-DISP1_RGB22
+DISP1_RGB21
 Text GLabel 12800 2200 0    50   Input ~ 0
+DISP1_RGB22
+Text GLabel 12800 2800 0    50   Input ~ 0
 DISP1_RGB23
 Text GLabel 12800 4800 0    50   Output ~ 0
 DISP1_VS
@@ -2603,8 +2599,6 @@ Text GLabel 30050 10000 0    50   Input ~ 0
 DISP2_PCLK
 Text GLabel 16800 4600 2    50   Output ~ 0
 DISP2_PCLK
-Text Notes 30550 13450 0    50   ~ 0
-TODO: connector
 $Comp
 L reform-kintex-rescue:TUSB1310ZAY-TUSB1310ZAY U7
 U 1 1 61361988
@@ -11561,4 +11555,8 @@ Text Notes 16000 14650 0    50   ~ 0
 TODO: double check.\nkinda weird locations.
 Text Notes 18550 15700 0    50   ~ 0
 TODO: double check,\nreally 3v3?
+Text GLabel 12800 2600 0    50   Input ~ 0
+DISP1_RGB18
+Text GLabel 12800 2900 0    50   Input ~ 0
+DISP1_RGB20
 $EndSCHEMATC
