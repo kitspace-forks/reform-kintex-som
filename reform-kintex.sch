@@ -557,9 +557,9 @@ USB2_TX_P
 Text GLabel 4000 8150 0    50   Input ~ 0
 USB2_TX_N
 Text GLabel 4000 7850 0    50   BiDi ~ 0
-EDP_SDA
+DISP1_SDA
 Text GLabel 4000 7750 0    50   Input ~ 0
-EDP_SCL
+DISP1_SCL
 Text GLabel 5800 5350 2    50   Input ~ 0
 PCIE1_CLK_N
 Text GLabel 5800 5250 2    50   Input ~ 0
