@@ -291,26 +291,12 @@ F 3 "" H 6650 12550 50  0001 C CNN
 	1    6650 12550
 	1    0    0    -1  
 $EndComp
-Connection ~ 3100 3050
-Wire Wire Line
-	3100 2750 3100 3050
 Wire Wire Line
 	4050 2750 3100 2750
 Connection ~ 3100 3350
 Wire Wire Line
-	3100 3050 3100 3350
-Wire Wire Line
-	4050 3050 3100 3050
-Connection ~ 3100 3650
-Wire Wire Line
-	3100 3350 3100 3650
-Wire Wire Line
 	4050 3350 3100 3350
 Connection ~ 3100 3950
-Wire Wire Line
-	3100 3650 3100 3950
-Wire Wire Line
-	4050 3650 3100 3650
 Connection ~ 3100 4450
 Wire Wire Line
 	3100 3950 3100 4450
@@ -972,4 +958,10 @@ U 5FC501AB
 F0 "RAM" 50
 F1 "RAM.sch" 50
 $EndSheet
+Wire Wire Line
+	3100 2750 3100 3350
+NoConn ~ 4050 3050
+Wire Wire Line
+	3100 3350 3100 3950
+NoConn ~ 4050 3650
 $EndSCHEMATC

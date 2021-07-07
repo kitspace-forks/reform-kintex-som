@@ -2486,9 +2486,9 @@ Text GLabel 11300 3200 2    50   Output ~ 0
 UART1_TX
 Text GLabel 12800 6500 0    50   Input ~ 0
 SD2_CD
-Text GLabel 11300 3400 2    50   Input ~ 0
+Text GLabel 11300 3500 2    50   Input ~ 0
 UART3_RX
-Text GLabel 11300 3500 2    50   Output ~ 0
+Text GLabel 11300 3400 2    50   Output ~ 0
 UART3_TX
 $Comp
 L Device:C_Small C9
@@ -6014,23 +6014,8 @@ Wire Wire Line
 	8800 20550 8700 20550
 Wire Wire Line
 	8700 20550 8700 20950
-Wire Wire Line
-	8700 20950 9100 20950
-$Comp
-L Device:R_Small R71
-U 1 1 6201CD91
-P 9200 20950
-F 0 "R71" V 9250 20800 50  0000 C CNN
-F 1 "0" V 9250 21150 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 9200 20950 50  0001 C CNN
-F 3 "~" H 9200 20950 50  0001 C CNN
-	1    9200 20950
-	0    -1   1    0   
-$EndComp
 Text GLabel 9500 20950 2    50   Output ~ 0
 TUSB_CLKOUT
-Wire Wire Line
-	9500 20950 9300 20950
 $Comp
 L Device:R_Small R59
 U 1 1 621593F9
@@ -11898,4 +11883,25 @@ Text GLabel 11300 2700 2    50   Output ~ 0
 PCIE1_RESETn
 Text GLabel 11300 2400 2    50   Output ~ 0
 PCIE2_RESETn
+NoConn ~ 11300 3300
+NoConn ~ 11300 3600
+NoConn ~ 11300 2900
+NoConn ~ 11300 2800
+NoConn ~ 11300 2600
+NoConn ~ 11300 2500
+NoConn ~ 11300 2300
+NoConn ~ 11300 6300
+NoConn ~ 11300 6200
+NoConn ~ 11300 6100
+NoConn ~ 11300 6000
+NoConn ~ 11300 5900
+NoConn ~ 11300 5800
+NoConn ~ 11300 5700
+NoConn ~ 11300 5600
+NoConn ~ 11300 5500
+NoConn ~ 11300 5400
+Text GLabel 1500 4400 0    50   Input ~ 0
+TUSB_CLKOUT
+Wire Wire Line
+	8700 20950 9500 20950
 $EndSCHEMATC
