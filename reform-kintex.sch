@@ -261,16 +261,9 @@ Wire Wire Line
 	6650 7050 6650 7250
 Wire Wire Line
 	5750 7050 6650 7050
-Connection ~ 6650 7550
-Wire Wire Line
-	6650 7250 6650 7550
 Wire Wire Line
 	5750 7250 6650 7250
 Connection ~ 6650 7850
-Wire Wire Line
-	6650 7550 6650 7850
-Wire Wire Line
-	5750 7550 6650 7550
 Connection ~ 6650 8150
 Wire Wire Line
 	6650 7850 6650 8150
@@ -964,4 +957,7 @@ NoConn ~ 4050 3050
 Wire Wire Line
 	3100 3350 3100 3950
 NoConn ~ 4050 3650
+Wire Wire Line
+	6650 7250 6650 7850
+NoConn ~ 5750 7550
 $EndSCHEMATC
