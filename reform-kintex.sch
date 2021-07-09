@@ -4,13 +4,13 @@ EELAYER END
 $Descr A3 11693 16535 portrait
 encoding utf-8
 Sheet 1 2
-Title "MNT Reform 2.0 System Module Template"
-Date "2020-11-29"
+Title "MNT Reform Kintex-7 SoM (MNT RKX7)"
+Date "2021-07-09"
 Rev "D-1"
 Comp "MNT Research GmbH"
-Comment1 ""
-Comment2 ""
-Comment3 ""
+Comment1 "https://mntre.com"
+Comment2 "Engineer: Lukas F. Hartmann"
+Comment3 "CERN Open Hardware Licence Version 2 - Strongly Reciprocal"
 Comment4 ""
 $EndDescr
 Text GLabel 5800 4250 2    50   Input ~ 0
