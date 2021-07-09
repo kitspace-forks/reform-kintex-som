@@ -15,39 +15,15 @@ Comment4 ""
 $EndDescr
 Text GLabel 5800 4250 2    50   Input ~ 0
 EDP_RESETn
-Text GLabel 5800 4350 2    50   Output ~ 0
-EDP_IRQ
-Text GLabel 4000 6150 0    50   Output ~ 0
-JTAG_TDI
 NoConn ~ 5750 4150
 NoConn ~ 5750 4050
 Text GLabel 5800 3950 2    50   Output ~ 0
 UART3_RX
 Text GLabel 5800 3850 2    50   Input ~ 0
 UART3_TX
-Text GLabel 4000 6850 0    50   Input ~ 0
-LPC_SS0
 NoConn ~ 5750 8350
 Text GLabel 4000 4250 0    50   Input ~ 0
 PCIE1_RESETn
-Wire Wire Line
-	2850 6450 4050 6450
-Connection ~ 2850 6450
-Wire Wire Line
-	2850 6250 2850 6450
-Wire Wire Line
-	2750 6250 2850 6250
-Wire Wire Line
-	2850 6550 2750 6550
-Connection ~ 2850 6550
-Wire Wire Line
-	2850 6650 2850 6550
-Wire Wire Line
-	2750 6650 2850 6650
-Wire Wire Line
-	2750 6450 2850 6450
-Wire Wire Line
-	4050 6550 2850 6550
 NoConn ~ 5750 4450
 NoConn ~ 5750 3750
 NoConn ~ 4050 6650
@@ -425,22 +401,12 @@ F 7 "Mouser" H 4850 7250 50  0001 C CNN "Distributor"
 	1    4850 7250
 	1    0    0    -1  
 $EndComp
-Text GLabel 4000 7250 0    50   Input ~ 0
-LPC_SCK
-Text GLabel 4000 6950 0    50   Input ~ 0
-LPC_MOSI
-Text GLabel 4000 7050 0    50   Output ~ 0
-LPC_MISO
-Text GLabel 2750 6250 0    60   Input ~ 0
-ETH0_LED_LINK2
 Text GLabel 5800 8450 2    50   Output ~ 0
 UART2_RX
 Text GLabel 5800 8550 2    50   Input ~ 0
 UART2_TX
 Wire Wire Line
 	2750 6350 4050 6350
-Text GLabel 5800 8250 2    50   Output ~ 0
-USB_PWR
 Wire Wire Line
 	6650 1800 6650 2450
 $Comp
@@ -456,14 +422,6 @@ F 3 "" H 3100 12550 50  0001 C CNN
 $EndComp
 Text GLabel 4000 6750 0    50   Output ~ 0
 SOC_RESETn
-Text GLabel 2750 6450 0    50   Output ~ 0
-JTAG_RSTn
-Text GLabel 4000 6050 0    50   Output ~ 0
-JTAG_TCK
-Text GLabel 4000 6250 0    50   Output ~ 0
-JTAG_TMS
-Text GLabel 2750 6650 0    50   Input ~ 0
-JTAG_TDO
 Text GLabel 4000 7450 0    50   Input ~ 0
 DAC_SCL
 Text GLabel 4000 7550 0    50   BiDi ~ 0
@@ -646,10 +604,6 @@ Text Notes 4400 2000 0    50   ~ 0
 card edge, \nmates with TE 1717254-1\nor TE 1473005-1
 Wire Wire Line
 	5750 10550 5800 10550
-Wire Wire Line
-	4050 9650 4000 9650
-Text GLabel 4000 9650 0    50   Output ~ 0
-SOC_WAKE
 $Comp
 L power:+5V #PWR0104
 U 1 1 5EB50931
@@ -674,24 +628,8 @@ F 3 "" H 6650 1800 50  0001 C CNN
 $EndComp
 Text Notes 6750 5650 0    50   ~ 0
 PCIe slot 2 reference clock coming\nfrom motherboard synthesizer
-Text GLabel 5800 11350 2    50   Input ~ 0
-TESTPOINT_PWM_4
 Text GLabel 5800 3550 2    50   Input ~ 0
 PCIE2_RESETn
-Wire Wire Line
-	5800 9950 5750 9950
-Text GLabel 5800 9050 2    50   Input ~ 0
-BOOTCFG_10
-Wire Wire Line
-	5800 9050 5750 9050
-Wire Wire Line
-	5800 9250 5750 9250
-Text GLabel 5800 9350 2    50   Input ~ 0
-BOOTCFG_13
-Wire Wire Line
-	5800 9350 5750 9350
-Text GLabel 5800 9250 2    50   Input ~ 0
-BOOTCFG_12
 Text GLabel 9200 3950 2    50   Input ~ 0
 DSI_CLK_N
 Text GLabel 9200 3850 2    50   Input ~ 0
@@ -702,16 +640,8 @@ Text GLabel 9200 3550 2    50   Input ~ 0
 DSI_D1_P
 Text GLabel 9200 3350 2    50   Input ~ 0
 DSI_D0_N
-Text GLabel 5800 9950 2    50   Input ~ 0
-BOOTCFG_4
-Text GLabel 4000 9450 0    50   Output ~ 0
-RTC_IRQ
-Wire Wire Line
-	4050 9450 4000 9450
 Wire Wire Line
 	4000 4250 4050 4250
-Wire Wire Line
-	5800 11350 5750 11350
 Wire Wire Line
 	5800 11150 5750 11150
 Wire Wire Line
@@ -735,24 +665,8 @@ Wire Wire Line
 NoConn ~ 5750 10350
 NoConn ~ 5750 11650
 NoConn ~ 4050 4350
-Text GLabel 4000 4150 0    50   BiDi ~ 0
-TESTPOINT_1
-Text GLabel 5800 2750 2    50   BiDi ~ 0
-TESTPOINT_2
 Text Notes 6750 5350 0    50   ~ 0
 PCIe slot 1 reference clock coming\nfrom this module
-Text GLabel 5800 11050 2    50   BiDi ~ 0
-TESTPOINT_3
-Wire Wire Line
-	5800 11050 5750 11050
-Text GLabel 4000 9550 0    50   Output ~ 0
-TESTPOINT_5
-Wire Wire Line
-	4050 9550 4000 9550
-Text GLabel 4000 9350 0    50   Output ~ 0
-MB_SWITCH_1
-Wire Wire Line
-	4000 9350 4050 9350
 Wire Wire Line
 	4000 10550 4050 10550
 Wire Wire Line
@@ -793,8 +707,6 @@ Text Notes 3000 6100 2    50   ~ 0
 JTAG
 Text Notes 1900 6550 2    50   ~ 0
 ETH LEDs\n(JTAG optional on MB)
-Wire Wire Line
-	4000 4150 4050 4150
 Text GLabel 4000 3150 0    60   Input ~ 0
 ETH0_C-
 Text GLabel 4000 3250 0    60   Input ~ 0
@@ -816,21 +728,7 @@ Wire Wire Line
 Wire Wire Line
 	4000 3850 4050 3850
 Wire Wire Line
-	4000 6050 4050 6050
-Wire Wire Line
-	4050 6150 4000 6150
-Wire Wire Line
-	4000 6250 4050 6250
-Wire Wire Line
 	4000 6750 4050 6750
-Wire Wire Line
-	4050 6850 4000 6850
-Wire Wire Line
-	4000 6950 4050 6950
-Wire Wire Line
-	4050 7050 4000 7050
-Wire Wire Line
-	4000 7250 4050 7250
 Wire Wire Line
 	4000 7650 4050 7650
 Wire Wire Line
@@ -854,10 +752,6 @@ Wire Wire Line
 Wire Wire Line
 	5750 8750 5800 8750
 Wire Wire Line
-	5800 8250 5750 8250
-Wire Wire Line
-	5750 2750 5800 2750
-Wire Wire Line
 	5800 2950 5750 2950
 Wire Wire Line
 	5750 3050 5800 3050
@@ -879,8 +773,6 @@ Wire Wire Line
 	5750 3950 5800 3950
 Wire Wire Line
 	5800 4250 5750 4250
-Wire Wire Line
-	5750 4350 5800 4350
 Wire Wire Line
 	5800 4650 5750 4650
 Wire Wire Line
@@ -960,4 +852,28 @@ NoConn ~ 4050 3650
 Wire Wire Line
 	6650 7250 6650 7850
 NoConn ~ 5750 7550
+NoConn ~ 4050 6450
+NoConn ~ 4050 6050
+NoConn ~ 4050 6150
+NoConn ~ 4050 6250
+Wire Wire Line
+	2750 6550 4050 6550
+NoConn ~ 4050 6850
+NoConn ~ 4050 6950
+NoConn ~ 4050 7050
+NoConn ~ 4050 7250
+NoConn ~ 5750 2750
+NoConn ~ 5750 4350
+NoConn ~ 5750 8250
+NoConn ~ 5750 9950
+NoConn ~ 5750 9050
+NoConn ~ 5750 9250
+NoConn ~ 5750 9350
+NoConn ~ 5750 11050
+NoConn ~ 5750 11350
+NoConn ~ 4050 4150
+NoConn ~ 4050 9350
+NoConn ~ 4050 9450
+NoConn ~ 4050 9550
+NoConn ~ 4050 9650
 $EndSCHEMATC
