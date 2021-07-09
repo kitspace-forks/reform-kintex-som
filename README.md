@@ -16,7 +16,7 @@ The design is made with [KiCAD, a free and open source EDA program](https://www.
 
 - FPGA: [Xilinx Kintex-7](https://www.xilinx.com/products/silicon-devices/fpga/kintex-7.html) XC7K160T-FFG676 or pin-compatible family members.
 - Memory: 2GB DDR3 (2x Micron IS43TR16512B-125KBLI in 32-bit topology)
-- 100 Mhz main clock oscillator
+- 100 MHz main clock oscillator
 - 1x USB3 + 1x USB2 implemented via parallel data pipes to TUSB1310ZAY transceiver
 - 4-lane MIPI-DSI implemented via TC358778XBG encoder (available on 33-pin FPC)
 - HDMI 1.4 (Full HD) implemented via Sii9022 encoder
