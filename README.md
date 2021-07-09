@@ -2,7 +2,7 @@
 
 ![MNT Reform Kintex-7 SoM (MNT RKX7) Render](images/mnt-rkx7-3d.png)
 
-This is the open hardware system-on-module featuring the Xilinx Kintex-7 FPGA and 2GB DDR3 RAM. It can be used as an alternative to the main processor module in the [MNT Reform open hardware laptop](https://www.crowdsupply.com/mnt/reform) or in any other custom device. The idea is to test synthesized open cores such as Ariane (RISC-V) or LibreSOC (OpenPOWER) in a real laptop. True emulation of vintage computer architectures in a laptop form factor is possible as well.
+This is the open hardware system-on-module featuring the Xilinx Kintex-7 FPGA and 2GB DDR3 RAM. It can be used as an alternative to the main processor module in the [MNT Reform open hardware laptop](https://www.crowdsupply.com/mnt/reform) or in any other custom device. The idea is to test synthesized open cores such as [CORE-V CVA6](https://github.com/openhwgroup/cva6) (RISC-V), [LiteX](https://github.com/enjoy-digital/litex) (multi-architecture), [LibreSOC](https://libre-soc.org/) (OpenPOWER) in a real laptop. True emulation of vintage computer architectures in a laptop form factor is possible as well.
 
 The module was designed by Lukas F. Hartmann (mntmn) of [MNT Research GmbH](https://mntre.com).
 
