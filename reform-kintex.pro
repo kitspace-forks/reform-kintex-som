@@ -1,4 +1,4 @@
-update=2021-05-28T13:11:20 CEST
+update=2021-07-11T20:23:33 CEST
 version=1
 last_client=kicad
 [general]
@@ -252,6 +252,39 @@ Clearance=0.2
 TrackWidth=0.25
 ViaDiameter=0.8
 ViaDrill=0.4
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.2
+dPairGap=0.25
+dPairViaGap=0.25
+[pcbnew/Netclasses/2]
+Name=DDR_A
+Clearance=0.1
+TrackWidth=0.1
+ViaDiameter=0.45
+ViaDrill=0.15
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.2
+dPairGap=0.25
+dPairViaGap=0.25
+[pcbnew/Netclasses/3]
+Name=DDR_D
+Clearance=0.1
+TrackWidth=0.1
+ViaDiameter=0.45
+ViaDrill=0.15
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.2
+dPairGap=0.25
+dPairViaGap=0.25
+[pcbnew/Netclasses/4]
+Name=High Speed
+Clearance=0.1
+TrackWidth=0.1
+ViaDiameter=0.45
+ViaDrill=0.15
 uViaDiameter=0.3
 uViaDrill=0.1
 dPairWidth=0.2

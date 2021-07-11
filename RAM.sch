@@ -1475,8 +1475,6 @@ F 3 "" H 2200 15150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2200 15150 2200 15100
-Text Notes 1500 12050 0    50   ~ 0
-TODO: A5 was here
 $Comp
 L power:+1V0 #PWR023
 U 1 1 60436BA2
@@ -7908,7 +7906,7 @@ Wire Wire Line
 Wire Wire Line
 	19100 13350 18350 13350
 $Comp
-L reform-kintex-rescue:Si52112-B5-reform2-som U17
+L reform2-som:Si52112-B5 U17
 U 1 1 70F5A39F
 P 21800 14500
 AR Path="/70F5A39F" Ref="U17"  Part="1" 
@@ -11397,17 +11395,6 @@ F 3 "http://www.abracon.com/Oscillators/ASV.pdf" H 34650 7750 50  0001 C CNN
 	1    34750 7750
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+3V3 #PWR0189
-U 1 1 6C392DFE
-P 34750 7300
-F 0 "#PWR0189" H 34750 7150 50  0001 C CNN
-F 1 "+3V3" H 34765 7473 50  0000 C CNN
-F 2 "" H 34750 7300 50  0001 C CNN
-F 3 "" H 34750 7300 50  0001 C CNN
-	1    34750 7300
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	34750 7450 34750 7400
 Wire Wire Line
@@ -11516,7 +11503,7 @@ Wire Wire Line
 	24750 7500 24750 7350
 Wire Wire Line
 	24750 7350 24800 7350
-Text Notes 34350 6950 0    50   ~ 0
+Text Notes 34350 6750 0    50   ~ 0
 MAIN CLOCK (100MHz)
 Text GLabel 35200 7750 2    50   Output ~ 0
 CLK_100MHZ
@@ -11535,10 +11522,8 @@ F 3 "" H 34750 8150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	34750 8150 34750 8100
-Text GLabel 8100 6000 0    50   Input ~ 0
+Text GLabel 3000 13700 0    50   Input ~ 0
 CLK_100MHZ
-Wire Wire Line
-	8100 6000 8250 6000
 NoConn ~ 6450 8600
 $Comp
 L FPGA_Xilinx_Kintex7:XC7K160T-FFG676 U2
@@ -11708,7 +11693,6 @@ TUSB_CLKOUT
 Wire Wire Line
 	9650 22550 10450 22550
 NoConn ~ 3000 13800
-NoConn ~ 3000 13700
 Text GLabel 31000 10850 0    50   Input ~ 0
 DSI_REFCLK
 Wire Wire Line
@@ -12324,12 +12308,30 @@ F 3 "~" H 32550 8000 50  0001 C CNN
 	1    32550 8000
 	1    0    0    -1  
 $EndComp
-Text Notes 750  11550 0    50   ~ 0
-TODO: move 100 mhz clkin to this column
 Text Notes 750  11400 0    50   ~ 0
 TODO: validate pin assignment in vivado
 Text GLabel 7000 12300 2    50   Input ~ 0
 RAM_DM1
-Text Notes 1850 13750 0    50   ~ 0
-TODO: move syclk here
+$Comp
+L power:+1V5 #PWR0189
+U 1 1 623FB349
+P 34750 7100
+F 0 "#PWR0189" H 34750 6950 50  0001 C CNN
+F 1 "+1V5" H 34765 7273 50  0000 C CNN
+F 2 "" H 34750 7100 50  0001 C CNN
+F 3 "" H 34750 7100 50  0001 C CNN
+	1    34750 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R110
+U 1 1 623FB7D6
+P 34750 7200
+F 0 "R110" H 34809 7246 50  0000 L CNN
+F 1 "0" H 34809 7155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 34750 7200 50  0001 C CNN
+F 3 "~" H 34750 7200 50  0001 C CNN
+	1    34750 7200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
