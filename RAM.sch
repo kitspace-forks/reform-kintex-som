@@ -187,23 +187,23 @@ Text GLabel 7000 13200 2    50   Input ~ 0
 RAM_D12
 Text GLabel 7000 12600 2    50   Input ~ 0
 RAM_D15
-Text GLabel 7000 11300 2    50   Input ~ 0
+Text GLabel 7000 12900 2    50   Input ~ 0
 RAM_D13
-Text GLabel 7000 11700 2    50   Input ~ 0
-RAM_D11
 Text GLabel 7000 12500 2    50   Input ~ 0
+RAM_D11
+Text GLabel 7000 11700 2    50   Input ~ 0
 RAM_D7
 Text GLabel 7000 13300 2    50   Input ~ 0
 RAM_D10
-Text GLabel 7000 11400 2    50   Input ~ 0
+Text GLabel 7000 13000 2    50   Input ~ 0
 RAM_D9
 Text GLabel 7000 12400 2    50   Input ~ 0
 RAM_D8
-Text GLabel 7000 12900 2    50   Input ~ 0
+Text GLabel 7000 11300 2    50   Input ~ 0
 RAM_D5
 Text GLabel 7000 11900 2    50   Input ~ 0
 RAM_D4
-Text GLabel 7000 13000 2    50   Input ~ 0
+Text GLabel 7000 11400 2    50   Input ~ 0
 RAM_D3
 Text GLabel 7000 11200 2    50   Input ~ 0
 RAM_D2
@@ -263,8 +263,6 @@ Text GLabel 3000 13300 0    50   Input ~ 0
 RAM_WE#
 Text GLabel 7000 13400 2    50   Input ~ 0
 RAM_RESET#
-Text GLabel 7000 14600 2    50   Input ~ 0
-RAM_DM1
 Text GLabel 3000 13400 0    50   Input ~ 0
 RAM_CS#
 Text GLabel 3000 11500 0    50   Input ~ 0
@@ -7910,9 +7908,11 @@ Wire Wire Line
 Wire Wire Line
 	19100 13350 18350 13350
 $Comp
-L reform2-som:Si52112-B5 U17
+L reform-kintex-rescue:Si52112-B5-reform2-som U17
 U 1 1 70F5A39F
 P 21800 14500
+AR Path="/70F5A39F" Ref="U17"  Part="1" 
+AR Path="/5FC501AB/70F5A39F" Ref="U17"  Part="1" 
 F 0 "U17" H 21800 14965 50  0000 C CNN
 F 1 "Si52112-B5-GM2" H 21800 14874 50  0000 C CNN
 F 2 "footprints:Silicon_Labs-Si52112-B5-GM2-Level_B" H 21800 14050 50  0001 C CNN
@@ -11707,7 +11707,6 @@ Text GLabel 2450 6000 0    50   Input ~ 0
 TUSB_CLKOUT
 Wire Wire Line
 	9650 22550 10450 22550
-NoConn ~ 7000 12300
 NoConn ~ 3000 13800
 NoConn ~ 3000 13700
 Text GLabel 31000 10850 0    50   Input ~ 0
@@ -12325,4 +12324,12 @@ F 3 "~" H 32550 8000 50  0001 C CNN
 	1    32550 8000
 	1    0    0    -1  
 $EndComp
+Text Notes 750  11550 0    50   ~ 0
+TODO: move 100 mhz clkin to this column
+Text Notes 750  11400 0    50   ~ 0
+TODO: validate pin assignment in vivado
+Text GLabel 7000 12300 2    50   Input ~ 0
+RAM_DM1
+Text Notes 1850 13750 0    50   ~ 0
+TODO: move syclk here
 $EndSCHEMATC
