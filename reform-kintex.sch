@@ -5,7 +5,7 @@ $Descr A3 11693 16535 portrait
 encoding utf-8
 Sheet 1 2
 Title "MNT Reform Kintex-7 SoM (MNT RKX7)"
-Date "2021-07-09"
+Date "2021-07-11"
 Rev "D-1"
 Comp "MNT Research GmbH"
 Comment1 "https://mntre.com"
