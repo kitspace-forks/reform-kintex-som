@@ -814,7 +814,7 @@ BACKLIGHT
 Text Notes 3000 7550 2    50   ~ 0
 AUDIO CTRL\nWOLFSON WM8960
 Text Notes 3000 7850 2    50   ~ 0
-DSI/EDP BRIDGE CTRL\nTI SN86DSI65
+DSI/EDP BRIDGE CTRL\nTI SN65DSI86
 Text Notes 6750 3950 0    50   ~ 0
 UART (optional) to \nSystem Controller (LPC)
 Text Notes 6750 8600 0    50   ~ 0
