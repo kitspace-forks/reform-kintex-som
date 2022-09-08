@@ -3810,7 +3810,7 @@
       (reference "GFX1") (unit 1) (value "MountingHole") (footprint "footprints:mnt-rkx7")
     )
     (path "/00000000-0000-0000-0000-00005fc501ab/00000000-0000-0000-0000-0000b975f5a1"
-      (reference "GFX2") (unit 1) (value "MountingHole") (footprint "footprints:mnt-rkx7-badge-d01")
+      (reference "GFX2") (unit 1) (value "MountingHole") (footprint "footprints:mnt-rkx7-badge-d02")
     )
     (path "/00000000-0000-0000-0000-00005dbc8bc3"
       (reference "H1") (unit 1) (value "MountingHole_Pad") (footprint "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad")
@@ -3972,10 +3972,13 @@
       (reference "R43") (unit 1) (value "100k 1%") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
     (path "/00000000-0000-0000-0000-00005fc501ab/2efc0877-d685-4192-abb2-2311fa240f88"
-      (reference "R44") (unit 1) (value "0") (footprint "Resistor_SMD:R_0402_1005Metric")
+      (reference "R44") (unit 1) (value "20") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
     (path "/00000000-0000-0000-0000-00005fc501ab/4b76e6a0-72a5-465f-a2e2-30a61ebda205"
-      (reference "R45") (unit 1) (value "0") (footprint "Resistor_SMD:R_0402_1005Metric")
+      (reference "R45") (unit 1) (value "20") (footprint "Resistor_SMD:R_0402_1005Metric")
+    )
+    (path "/00000000-0000-0000-0000-00005fc501ab/fdb71c42-bcda-426b-adc8-afe0201ec47c"
+      (reference "R46") (unit 1) (value "1.5k") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
     (path "/00000000-0000-0000-0000-00005fc501ab/00000000-0000-0000-0000-00006100be01"
       (reference "R47") (unit 1) (value "0") (footprint "Resistor_SMD:R_0603_1608Metric")
