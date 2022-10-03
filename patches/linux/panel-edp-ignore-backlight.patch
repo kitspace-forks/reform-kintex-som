@@ -1,0 +1,34 @@
+diff --git a/drivers/gpu/drm/panel/panel-edp.c b/drivers/gpu/drm/panel/panel-edp.c
+index f7bfcf63..a402d333 100644
+--- a/drivers/gpu/drm/panel/panel-edp.c
++++ b/drivers/gpu/drm/panel/panel-edp.c
+@@ -839,8 +839,9 @@ static int panel_edp_probe(struct device *dev, const struct panel_desc *desc,
+ 	drm_panel_init(&panel->base, dev, &panel_edp_funcs, DRM_MODE_CONNECTOR_eDP);
+ 
+ 	err = drm_panel_of_backlight(&panel->base);
+-	if (err)
+-		goto err_finished_ddc_init;
++	// FIXME MNT RKX7: Don't care about backlight for now
++	//if (err)
++	//	goto err_finished_ddc_init;
+ 
+ 	/*
+ 	 * We use runtime PM for prepare / unprepare since those power the panel
+@@ -865,14 +866,15 @@ static int panel_edp_probe(struct device *dev, const struct panel_desc *desc,
+ 		dev_warn(dev, "Expected bpc in {6,8,10} but got: %u\n", desc->bpc);
+ 	}
+ 
+-	if (!panel->base.backlight && panel->aux) {
++	// FIXME MNT RKX7: Don't care about backlight for now
++	/*if (!panel->base.backlight && panel->aux) {
+ 		pm_runtime_get_sync(dev);
+ 		err = drm_panel_dp_aux_backlight(&panel->base, panel->aux);
+ 		pm_runtime_mark_last_busy(dev);
+ 		pm_runtime_put_autosuspend(dev);
+ 		if (err)
+ 			goto err_finished_pm_runtime;
+-	}
++	}*/
+ 
+ 	drm_panel_add(&panel->base);
+ 

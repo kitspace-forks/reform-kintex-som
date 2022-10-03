@@ -1,0 +1,253 @@
+diff --git a/drivers/gpu/drm/bridge/analogix/analogix-anx6345.c b/drivers/gpu/drm/bridge/analogix/analogix-anx6345.c
+index 94e56a2e..127481ba 100644
+--- a/drivers/gpu/drm/bridge/analogix/analogix-anx6345.c
++++ b/drivers/gpu/drm/bridge/analogix/analogix-anx6345.c
+@@ -120,11 +120,6 @@ static int anx6345_dp_link_training(struct anx6345 *anx6345)
+ 		return -EINVAL;
+ 	}
+ 
+-	err = anx6345_set_bits(anx6345->map[I2C_IDX_TXCOM], SP_VID_CTRL1_REG,
+-			       SP_VIDEO_MUTE);
+-	if (err)
+-		return err;
+-
+ 	err = anx6345_clear_bits(anx6345->map[I2C_IDX_TXCOM],
+ 				 SP_VID_CTRL1_REG, SP_VIDEO_EN);
+ 	if (err)
+@@ -132,7 +127,7 @@ static int anx6345_dp_link_training(struct anx6345 *anx6345)
+ 
+ 	/* Get DPCD info */
+ 	err = drm_dp_dpcd_read(&anx6345->aux, DP_DPCD_REV,
+-			       &anx6345->dpcd, DP_RECEIVER_CAP_SIZE);
++	                       &anx6345->dpcd, DP_RECEIVER_CAP_SIZE);
+ 	if (err < 0) {
+ 		DRM_ERROR("Failed to read DPCD: %d\n", err);
+ 		return err;
+@@ -251,8 +246,9 @@ static int anx6345_tx_initialization(struct anx6345 *anx6345)
+ 	int err, i;
+ 
+ 	/* FIXME: colordepth is hardcoded for now */
++	/* MNT RKX7: Changed to 8BIT */
+ 	err = regmap_write(anx6345->map[I2C_IDX_TXCOM], SP_VID_CTRL2_REG,
+-			   SP_IN_BPC_6BIT << SP_IN_BPC_SHIFT);
++			   SP_IN_BPC_8BIT << SP_IN_BPC_SHIFT);
+ 	if (err)
+ 		return err;
+ 
+@@ -306,7 +302,7 @@ static void anx6345_poweron(struct anx6345 *anx6345)
+ 	int err;
+ 
+ 	/* Ensure reset is asserted before starting power on sequence */
+-	gpiod_set_value_cansleep(anx6345->gpiod_reset, 1);
++	//gpiod_set_value_cansleep(anx6345->gpiod_reset, 1);
+ 	usleep_range(1000, 2000);
+ 
+ 	err = regulator_enable(anx6345->dvdd12);
+@@ -331,7 +327,7 @@ static void anx6345_poweron(struct anx6345 *anx6345)
+ 	 */
+ 	usleep_range(2000, 5000);
+ 
+-	gpiod_set_value_cansleep(anx6345->gpiod_reset, 0);
++	//gpiod_set_value_cansleep(anx6345->gpiod_reset, 0);
+ 
+ 	/* Power on registers module */
+ 	anx6345_set_bits(anx6345->map[I2C_IDX_TXCOM], SP_POWERDOWN_CTRL_REG,
+@@ -349,7 +345,7 @@ static void anx6345_poweroff(struct anx6345 *anx6345)
+ {
+ 	int err;
+ 
+-	gpiod_set_value_cansleep(anx6345->gpiod_reset, 1);
++	//gpiod_set_value_cansleep(anx6345->gpiod_reset, 1);
+ 	usleep_range(1000, 2000);
+ 
+ 	if (anx6345->panel)
+@@ -414,9 +410,39 @@ static int anx6345_start(struct anx6345 *anx6345)
+ static int anx6345_config_dp_output(struct anx6345 *anx6345)
+ {
+ 	int err;
++  unsigned int dv = 0;
++
++  // FIXME: MNT RK7: Hard code video mode
++  regmap_write(anx6345->map[I2C_IDX_TXCOM], 0x12, 1120 & 0x00ff);
++  regmap_write(anx6345->map[I2C_IDX_TXCOM], 0x13, (1120 & 0xff00)>>8);
++  regmap_write(anx6345->map[I2C_IDX_TXCOM], 0x14, 1080 & 0x00ff);
++  regmap_write(anx6345->map[I2C_IDX_TXCOM], 0x15, (1080 & 0xff00)>>8);
++  regmap_write(anx6345->map[I2C_IDX_TXCOM], 0x16, 4);
++  regmap_write(anx6345->map[I2C_IDX_TXCOM], 0x17, 4);
++  regmap_write(anx6345->map[I2C_IDX_TXCOM], 0x18, 24);
++
++  regmap_write(anx6345->map[I2C_IDX_TXCOM], 0x19, 2080 & 0x00ff);
++  regmap_write(anx6345->map[I2C_IDX_TXCOM], 0x1a, (2080 & 0xff00)>>8);
++  regmap_write(anx6345->map[I2C_IDX_TXCOM], 0x1b, 1920 & 0x00ff);
++  regmap_write(anx6345->map[I2C_IDX_TXCOM], 0x1c, (1920 & 0xff00)>>8);
++  regmap_write(anx6345->map[I2C_IDX_TXCOM], 0x1d, 40);
++  regmap_write(anx6345->map[I2C_IDX_TXCOM], 0x1f, 40);
++  regmap_write(anx6345->map[I2C_IDX_TXCOM], 0x21, 80);
++
++  // TODO: hs/vs                                   bist   f_sel
++  regmap_write(anx6345->map[I2C_IDX_TXCOM], 0x11, (0<<7)|(1<<4));
++
++  // with DDR_CTRL = 1: pixel borders cleaned up
++  // 0: EDGE = 0 (posedge latch)
++  // 1: DDR_CTRL = 1 (negedge capture)
++  // 2: BSEL = 0 (SDR)
++  // 3: reserved
++  // 4: DEMUX = 0
++  // 5: DE_GEN = 0
++  // 6: VIDEO_MUTE = 0
++  // 7: VIDEO_EN = 0
++  regmap_write(anx6345->map[I2C_IDX_TXCOM], SP_VID_CTRL1_REG, BIT(1)|BIT(0));
+ 
+-	err = anx6345_clear_bits(anx6345->map[I2C_IDX_TXCOM], SP_VID_CTRL1_REG,
+-				 SP_VIDEO_MUTE);
+ 	if (err)
+ 		return err;
+ 
+@@ -427,9 +453,50 @@ static int anx6345_config_dp_output(struct anx6345 *anx6345)
+ 		return err;
+ 
+ 	/* Force stream valid */
+-	return anx6345_set_bits(anx6345->map[I2C_IDX_DPTX],
++	anx6345_set_bits(anx6345->map[I2C_IDX_DPTX],
+ 			       SP_DP_SYSTEM_CTRL_BASE + 3,
+ 			       SP_STRM_FORCE | SP_STRM_CTRL);
++
++  // FIXME: Debug video input status
++
++  regmap_read(anx6345->map[I2C_IDX_TXCOM], 0x23, &dv);
++  printk(KERN_ALERT "DEBUG: video status %x \n", dv);
++  regmap_read(anx6345->map[I2C_IDX_TXCOM], 0x24, &dv);
++  printk(KERN_ALERT "DEBUG: total line lo %x \n", dv);
++  regmap_read(anx6345->map[I2C_IDX_TXCOM], 0x25, &dv);
++  printk(KERN_ALERT "DEBUG: total line hi %x \n", dv);
++  regmap_read(anx6345->map[I2C_IDX_TXCOM], 0x26, &dv);
++  printk(KERN_ALERT "DEBUG: active line lo %x \n", dv);
++  regmap_read(anx6345->map[I2C_IDX_TXCOM], 0x27, &dv);
++  printk(KERN_ALERT "DEBUG: active line hi %x \n", dv);
++  regmap_read(anx6345->map[I2C_IDX_TXCOM], 0x28, &dv);
++  printk(KERN_ALERT "DEBUG: vfp %x \n", dv);
++  regmap_read(anx6345->map[I2C_IDX_TXCOM], 0x29, &dv);
++  printk(KERN_ALERT "DEBUG: vsw %x \n", dv);
++  regmap_read(anx6345->map[I2C_IDX_TXCOM], 0x2a, &dv);
++  printk(KERN_ALERT "DEBUG: vbp %x \n", dv);
++  regmap_read(anx6345->map[I2C_IDX_TXCOM], 0x2b, &dv);
++  printk(KERN_ALERT "DEBUG: total pixel lo %x \n", dv);
++  regmap_read(anx6345->map[I2C_IDX_TXCOM], 0x2c, &dv);
++  printk(KERN_ALERT "DEBUG: total pixel hi %x \n", dv);
++  regmap_read(anx6345->map[I2C_IDX_TXCOM], 0x2d, &dv);
++  printk(KERN_ALERT "DEBUG: active pixel lo %x \n", dv);
++  regmap_read(anx6345->map[I2C_IDX_TXCOM], 0x2e, &dv);
++  printk(KERN_ALERT "DEBUG: active pixel hi %x \n", dv);
++  regmap_read(anx6345->map[I2C_IDX_TXCOM], 0x2f, &dv);
++  printk(KERN_ALERT "DEBUG: hfp lo %x \n", dv);
++  regmap_read(anx6345->map[I2C_IDX_TXCOM], 0x30, &dv);
++  printk(KERN_ALERT "DEBUG: hfp hi %x \n", dv);
++  regmap_read(anx6345->map[I2C_IDX_TXCOM], 0x31, &dv);
++  printk(KERN_ALERT "DEBUG: hsw lo %x \n", dv);
++  regmap_read(anx6345->map[I2C_IDX_TXCOM], 0x32, &dv);
++  printk(KERN_ALERT "DEBUG: hsw hi %x \n", dv);
++  regmap_read(anx6345->map[I2C_IDX_TXCOM], 0x33, &dv);
++  printk(KERN_ALERT "DEBUG: hbp lo %x \n", dv);
++  regmap_read(anx6345->map[I2C_IDX_TXCOM], 0x34, &dv);
++  printk(KERN_ALERT "DEBUG: hbp hi %x \n", dv);
++
++  return 0;
+ }
+ 
+ static int anx6345_get_downstream_info(struct anx6345 *anx6345)
+@@ -457,6 +524,9 @@ static int anx6345_get_modes(struct drm_connector *connector)
+ 	int err, num_modes = 0;
+ 	bool power_off = false;
+ 
++  // FIXME: MNT RKX7: don't care about modes for now
++  return 0;
++
+ 	mutex_lock(&anx6345->lock);
+ 
+ 	if (!anx6345->edid) {
+@@ -485,8 +555,8 @@ static int anx6345_get_modes(struct drm_connector *connector)
+ 
+ 	num_modes += drm_add_edid_modes(connector, anx6345->edid);
+ 
+-	/* Driver currently supports only 6bpc */
+-	connector->display_info.bpc = 6;
++  // FIXME: MNT RKX7: changed BPC to 8
++	connector->display_info.bpc = 8;
+ 
+ unlock:
+ 	if (power_off)
+@@ -524,6 +594,9 @@ static int anx6345_bridge_attach(struct drm_bridge *bridge,
+ 	struct anx6345 *anx6345 = bridge_to_anx6345(bridge);
+ 	int err;
+ 
++  // FIXME: MNT RKX7: Don't care about bridges for now
++  return 0;
++
+ 	if (flags & DRM_BRIDGE_ATTACH_NO_CONNECTOR) {
+ 		DRM_ERROR("Fix bridge driver to make connector optional!");
+ 		return -EINVAL;
+@@ -582,7 +655,8 @@ static int anx6345_bridge_attach(struct drm_bridge *bridge,
+ 
+ static void anx6345_bridge_detach(struct drm_bridge *bridge)
+ {
+-	drm_dp_aux_unregister(&bridge_to_anx6345(bridge)->aux);
++  // FIXME: MNT RKX7
++	//drm_dp_aux_unregister(&bridge_to_anx6345(bridge)->aux);
+ }
+ 
+ static enum drm_mode_status
+@@ -619,6 +693,18 @@ static void anx6345_bridge_enable(struct drm_bridge *bridge)
+ 	struct anx6345 *anx6345 = bridge_to_anx6345(bridge);
+ 	int err;
+ 
++	anx6345->aux.name = "DP-AUX";
++	anx6345->aux.dev = &anx6345->client->dev;
++	anx6345->aux.drm_dev = bridge->dev;
++	anx6345->aux.transfer = anx6345_aux_transfer;
++
++  // FIXME: MNT RKX7: can crash for unknown reason
++	/*err = drm_dp_aux_register(&anx6345->aux);
++	if (err < 0) {
++		DRM_ERROR("Failed to register aux channel: %d\n", err);
++		return err;
++	}*/
++
+ 	if (anx6345->panel)
+ 		drm_panel_enable(anx6345->panel);
+ 
+@@ -718,7 +804,7 @@ static int anx6345_i2c_probe(struct i2c_client *client,
+ 		return err;
+ 
+ 	if (err)
+-		DRM_DEBUG("No panel found\n");
++		DRM_ERROR("No panel found\n");
+ 
+ 	/* 1.2V digital core power regulator  */
+ 	anx6345->dvdd12 = devm_regulator_get(dev, "dvdd12");
+@@ -738,12 +824,14 @@ static int anx6345_i2c_probe(struct i2c_client *client,
+ 		return PTR_ERR(anx6345->dvdd25);
+ 	}
+ 
++  printk(KERN_ALERT "DEBUG: Passed %s %d \n",__FUNCTION__,__LINE__);
++
+ 	/* GPIO for chip reset */
+-	anx6345->gpiod_reset = devm_gpiod_get(dev, "reset", GPIOD_OUT_LOW);
++	/*anx6345->gpiod_reset = devm_gpiod_get(dev, "reset", GPIOD_OUT_LOW);
+ 	if (IS_ERR(anx6345->gpiod_reset)) {
+ 		DRM_ERROR("Reset gpio not found\n");
+ 		return PTR_ERR(anx6345->gpiod_reset);
+-	}
++  }*/
+ 
+ 	/* Map slave addresses of ANX6345 */
+ 	for (i = 0; i < I2C_NUM_ADDRESSES; i++) {
+@@ -776,6 +864,9 @@ static int anx6345_i2c_probe(struct i2c_client *client,
+ 		anx6345->bridge.funcs = &anx6345_bridge_funcs;
+ 		drm_bridge_add(&anx6345->bridge);
+ 
++    // FIXME: MNT RKX7: hack
++    anx6345_bridge_enable(&anx6345->bridge);
++
+ 		return 0;
+ 	} else {
+ 		anx6345_poweroff(anx6345);
