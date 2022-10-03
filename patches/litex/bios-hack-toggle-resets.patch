@@ -1,0 +1,16 @@
+diff --git a/litex/soc/software/bios/main.c b/litex/soc/software/bios/main.c
+index 5863fcd0..4fbc1563 100644
+--- a/litex/soc/software/bios/main.c
++++ b/litex/soc/software/bios/main.c
+@@ -199,6 +199,11 @@ __attribute__((__used__)) int main(int i, char **c)
+ 	/* Execute  initialization functions */
+ 	init_dispatcher();
+ 
++	// FIXME MNT Reform: Reset Analogix eDP chip and USB hub
++	leds_out_write(0);
++	cdelay(1000);
++	leds_out_write(0xff);
++
+ 	/* Execute Boot sequence */
+ #ifndef CONFIG_BIOS_NO_BOOT
+ 	if(sdr_ok) {
